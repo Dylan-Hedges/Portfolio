@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1>Welcome.</h1>
+                <p>Technology blog covering web development, cloud computing and technology.</p>
+                <% if(currentUser && currentUser.username == "admin"){ %>
+                    <p>
+                        <a class="btn btn-primary btn-lg" href="/blogposts/new">Add New Blog Post</a>
+                    </p>
+                <% } %>
+            </div>
+        </header>
+        <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+            <% blogposts.forEach(function(blogpost){ %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="<%= blogpost.image %>">
+                        <div class="caption">
+                            <h4><%= blogpost.name %></h4>
+                        </div>
+                        <p>
+                            <a href="/blogposts/<%=blogpost._id %>" class="btn btn-primary">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            <% }); %>
+        </div>    
+    </div>
+    
+<% include ../partials/footer %>
