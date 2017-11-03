@@ -58,9 +58,15 @@ router.get("/blogposts/:id", function(req,res){
 
 //EDIT BLOGPOST ROUTE
 router.get("/blogposts/:id/edit", middleware.checkBlogpostOwnership, function(req, res){
-        Blogpost.findById(req.params.id, function(err, foundBlogpost){
+    Blogpost.findById(req.params.id, function(err, foundBlogpost){
+        if(err){
+            res.redirect("/blogposts");
+            
+        }else{
             res.render("blogposts/edit", {blogpost: foundBlogpost});
-        });
+            
+        }
+    });
 });
 
 //UPDATE BLOGPOST

@@ -1,11 +1,12 @@
 //---------MIDDLEWARE----------
 var Blogpost = require ("../models/blogpost");
 var Comment = require ("../models/comment");
+
 var middlewareObj ={};
 
 //BLOGPOST OWNERSHIP
 middlewareObj.checkBlogpostOwnership = function(req, res, next){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated() && req.user.username == "admin"){
         Blogpost.findById(req.params.id, function(err, foundBlogpost){
            if(err || !foundBlogpost){
                req.flash("error", "Blogpost not found.");
@@ -19,7 +20,8 @@ middlewareObj.checkBlogpostOwnership = function(req, res, next){
            } 
         });
     }else{
-        res.redirect("back");
+        req.flash("error", "You do not have permission to do that.");
+        res.redirect("/blogposts");
     }
 }
 
@@ -54,13 +56,6 @@ middlewareObj.isLoggedIn = function (req, res, next){
     res.redirect("/login");
 }
 
-//LOGIN CHECKER
-middlewareObj.isLoggedInAdmin = function (req, res, next){
-    if(req.isAuthenticated()){
-        return next();
-    }
-    req.flash("error", "You need to be logged in to do that.");
-    res.redirect("/login");
-}
+
 
 module.exports = middlewareObj;
