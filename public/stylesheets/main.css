@@ -1,16 +1,23 @@
-.thumbnail img{
-    width: 100%;
+.container .jumbotron{
+    margin-top: 1%;
 }
 
-.thumbnail {
-    padding: 0;
+.formstyle{
+    padding: 1% 20% 0 20%;
 }
 
-.thumbnail .caption-full{
-    padding: 9px;
+.formstyle h1{
+    margin: 1% 0 5% 0;
+    text-align: center;
 }
 
 .delete-form{
     display: inline;
 }
 
+
+
+/*.blogpoststyle{*/
+/*        padding: 1% 10% 0 10%;*/
+
+/*}*/

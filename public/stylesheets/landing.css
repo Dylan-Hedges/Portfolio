@@ -2,7 +2,7 @@ body {
   background-color: #000;
 }
 
-#landing-header {
+.landing-header {
   /*"z-index: 1" - refers to the layering of objects on the page, will layer above other objects*/
   z-index: 1;
   /*"position: relative; - default is static, if left it will ignore the z-index*/
@@ -13,8 +13,14 @@ body {
   padding-top: 40vh;
 }
 
-#landing-header h1 {
+.landing-header h1 {
   color: #fff;
+  font-size: 5em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.landing-header a{
+  margin-top: 2%;
 }
 
 .slideshow {
