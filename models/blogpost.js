@@ -6,6 +6,7 @@ var blogpostSchema = new mongoose.Schema({
    price: String,
    image: String,
    description: String,
+   created: {type: Date, default: Date.now},
    author: {
       id: {
          type: mongoose.Schema.Types.ObjectId,

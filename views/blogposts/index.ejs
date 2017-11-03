@@ -1,8 +1,7 @@
 <% include ../partials/header %>
-
+    
     <div class="container">
         <header class="jumbotron">
-            <div class="container">
                 <h1>Welcome.</h1>
                 <p>Technology blog covering web development, cloud computing and technology.</p>
                 <% if(currentUser && currentUser.username == "admin"){ %>
@@ -10,23 +9,25 @@
                         <a class="btn btn-primary btn-lg" href="/blogposts/new">Add New Blog Post</a>
                     </p>
                 <% } %>
-            </div>
         </header>
-        <div class="row text-center" style="display:flex; flex-wrap: wrap;">
-            <% blogposts.forEach(function(blogpost){ %>
-                <div class="col-md-3 col-sm-6">
-                    <div class="thumbnail">
-                        <img src="<%= blogpost.image %>">
-                        <div class="caption">
-                            <h4><%= blogpost.name %></h4>
-                        </div>
-                        <p>
-                            <a href="/blogposts/<%=blogpost._id %>" class="btn btn-primary">More Info</a>
-                        </p>
+    </div>
+    <div class="container">
+        <div class="img-thumbnail">
+            <div class="row">
+                <% blogposts.forEach(function(blogpost){ %>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                        <img class="img-fluid" src="<%= blogpost.image %>">
                     </div>
-                </div>
-            <% }); %>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <h2><%=blogpost.name%></h2>
+                        <p><em><span> <%= blogpost.created.toDateString() %> </span></p></em>
+                        <p><%- blogpost.description.substring(0, 200) %>...</p>
+                            <a class="btn btn-outline-primary" href="/blogposts/<%=blogpost._id %>" >Read More</a>
+                    </div>
+                <% }); %>
+            </div>
         </div>    
     </div>
+  
     
 <% include ../partials/footer %>
