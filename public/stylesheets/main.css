@@ -1,5 +1,17 @@
+/*Removes rounded corners*/
+/** {*/
+/*  -webkit-border-radius: 0 !important;*/
+/*     -moz-border-radius: 0 !important;*/
+/*          border-radius: 0 !important;*/
+/*}*/
+i.icon {
+    font-size: 120%;
+    padding: 0 2px 0 4px;
+}
+
 .container .jumbotron{
     margin-top: 1%;
+    
 }
 
 .formstyle{

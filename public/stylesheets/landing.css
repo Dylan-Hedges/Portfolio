@@ -15,8 +15,8 @@ body {
 
 .landing-header h1 {
   color: #fff;
-  font-size: 5em;
-  text-shadow: 2px 2px 4px #000000;
+  font-size: 6em;
+  text-shadow: 4px 4px 4px #000000;
 }
 
 .landing-header a{
@@ -59,23 +59,24 @@ body {
 
 /*Adds background images to <li>*/
 .slideshow li:nth-child(1) { 
-  background-image: url(http://i.imgur.com/K3mPv14.jpg) 
+  background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://pixabay.com/get/ee3db4082cf61c22d9584518a3494294e170e4d204b014419cf7c37ea7ebb2/technology-785742_1920.jpg); 
 }
+
 .slideshow li:nth-child(2) { 
-  background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+  background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://pixabay.com/get/eb3cb10929f1083ed1534705fb094392e175e5d31eac104495f9c67ba0ecb2ba/web-design-2906159_1920.jpg);
   /*animation-delay: 10s; start the animation for image 2 after 10 seconds*/
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(http://i.imgur.com/emvhOnb.jpg);
+  background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://pixabay.com/get/e031b50b21fd1c3e955f4107e44b4091fe76e7d510b6134690f7c6/code-944499.jpg);
   animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+  background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://pixabay.com/get/eb35b10e28fd013ed1534705fb094392e175e5d31eac104495f9c67ba0eab2bd/cloud-computing-2001090_1920.jpg);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+  background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),  url(https://pixabay.com/get/e832b50d2efc063ed1534705fb094392e175e5d31eac104495f9c67ba0eeb4bb/digital-1742687_1920.jpg);
   animation-delay: 40s; 
 }
 
