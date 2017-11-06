@@ -9,6 +9,16 @@ router.get("/", function(req, res){
    res.render("landing"); 
 });
 
+//ABOUT ROUTE
+router.get("/about", function(req, res){
+   res.render("about"); 
+});
+
+//PROJECTS ROUTE
+router.get("/projects", function(req, res){
+   res.render("projects"); 
+});
+
 //--------------------REGISTER----------------------------------------
 //REGISTER ROUTE (form)
 router.get("/register", function(req, res){
@@ -40,7 +50,8 @@ router.get("/login", function(req, res){
 router.post("/login",  passport.authenticate("local", 
     {
         successRedirect: "/blogposts",
-        failureRedirect: "/login"
+        failureRedirect: "/login",
+        failureFlash: "Invalid username or password."
     }), function(req, res){
 });
 
