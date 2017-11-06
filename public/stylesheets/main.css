@@ -113,7 +113,27 @@ i.icon {
 /*-----------------------ABOUT PAGE-----------------------*/
 .aboutpage{
   margin-top: 1%;
+}
 
+.aboutpage h1 {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.aboutpage img {
+  width: 100%;
+}
+
+.abouticons {
+  font-size: 500%;
+  margin-top: 8%;
+  text-align: center;
+  color: lightblue;
+}
+
+.abouticonstext{
+  text-align: center;
+  font-size: 120%;
 }
 
 .aboutcontent {
@@ -132,26 +152,31 @@ i.icon {
 }
 
 
-.aboutpage h1 {
-    text-align: center;
-    margin-bottom: 3%;
+/*-----------------------PROJECTS PAGE-----------------------*/
+.projectspage {
+  margin-top: 1%;
 }
 
-.aboutpage img {
+.projectspage h1{
+    text-align: center;
+
+}
+
+.projectsimages{
+  margin-top: 5%;
+}
+
+.projectsimages img{
   width: 100%;
 }
 
-
-.abouticons {
-  font-size: 500%;
-  margin-top: 8%;
-  text-align: center;
-  color: lightblue;
-}
-
-.abouticonstext{
+.projectstext{
   text-align: center;
   font-size: 120%;
+}
+
+.projectstext h3{
+  margin: 10% 0 5% 0;
 }
 
 /*-----------------------BLOG PAGE-----------------------*/
