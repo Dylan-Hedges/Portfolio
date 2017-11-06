@@ -19,6 +19,11 @@ router.get("/projects", function(req, res){
    res.render("projects"); 
 });
 
+//CONTACT ROUTE
+router.get("/contact", function(req, res){
+   res.render("contact"); 
+});
+
 //--------------------REGISTER----------------------------------------
 //REGISTER ROUTE (form)
 router.get("/register", function(req, res){

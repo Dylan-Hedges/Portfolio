@@ -184,7 +184,41 @@ i.icon {
     margin-top: 1%;
 }
 
-/*-----------------------LOGIN AND RESITER PAGES-----------------------*/
+/*-----------------------CONTACT PAGE-----------------------*/
+.contactpage {
+  margin-top: 1%;
+}
+
+.contactpage h1 {
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: 300%;
+}
+
+.contacticons {
+  font-size: 550%;
+  margin: 8% 0 5% 0;
+  text-align: center;
+  color: lightblue;
+}
+
+.contactdownload{
+  text-align: center;
+  margin: 0 0 0 20%;
+  
+}
+.contactdownload i{
+  color: lightblue;
+  font-size: 550%;
+}
+
+
+.contactform {
+    padding: 1% 20% 0 20%;
+}
+
+
+/*-----------------------LOGIN AND REGISTER PAGES-----------------------*/
 .formstyle{
     padding: 1% 20% 0 20%;
 }
