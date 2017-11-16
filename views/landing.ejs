@@ -1,4 +1,5 @@
 <% include partials/header %>
+<section class="landing-splash-page ">    
     <div class="container">
         <% if(error && error.length > 0){ %>
             <div class="alert alert-danger" role="alert">
@@ -10,19 +11,90 @@
                 <%= success %>
             </div>
         <% } %>
+    <div class="splash-header">
+ 		<h1>Welcome.</h1>
+		<a href="/about" class="btn btn-lg btn-outline-primary">Learn More.</a>
+    </div>
+
+
+    	</div>
+</section>
+ 
+<section class="landing-icons-page">
+    <div class="container">
+        <div class="row landingicons">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <i class="html5 icon"></i>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <i class="code icon"></i>        
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <i class="css3 icon"></i>        
+            </div>
+        </div>
+        <div class="row landingiconstext">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <p>Web Development</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <p>Front End Development</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <p>Web Design</p>
+            </div>
+        </div>
+        <div class="row landingicons">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <i class="user circle outline icon"></i>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <i class="record icon"></i>        
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <i class="cloud icon"></i>        
+            </div>
+        </div>
+        <div class="row landingiconstext">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <p>UI Development</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <p>Graphic/Video Editing</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <p>Cloud Computing</p>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<section class="landing-projects-page">
+    <div class="container">
+        <div class="landingcontent">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="https://www.howtogeek.com/wp-content/uploads/2010/03/image5.png">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="landingcontent">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>           
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="https://www.howtogeek.com/wp-content/uploads/2010/03/image5.png">
+            </div>
+        </div>
+    </div>
     </div>
     
-    <div class="landing-header">
- 		<h1>Welcome to my portfolio!</h1>
-		<a href="/blogposts" class="btn btn-lg btn-outline-primary">View Blog</a>
-    </div>
     
-    <ul class="slideshow">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+
+</section>
 
 <% include partials/footer %>
