@@ -4,47 +4,37 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i" rel="stylesheet">
         <link rel="stylesheet" href="/stylesheets/main.css">
+        
     </head>
     
-    <body>
-    <div class="containe-fluid">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="/">Home <i class="code icon"></i></a>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-         <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/blogposts">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav " id="navbarSupportedContent">
-            <% if(!currentUser){ %>
-                <li class="nav-item"><a class="nav-link" href="/login"><i class="user icon"></i>Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="/register"><i class="plus icon"></i>Sign Up</a></li>
-            <% } else { %>
-                <li class="nav-item"><a class="nav-link" href="#">Welcome <%= currentUser.username %></a></li>
-                <li class="nav-item"><a class="nav-link" href="/logout"><i class="sign out icon"></i>Logout</a></li>
-            <% } %>
-        </ul>
-      </div>
-    </nav>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-muted navbar-toggleable-md">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/"><i class="code icon"></i></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blogposts">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav " id="navbarSupportedContent">
+                    <% if(!currentUser){ %>
+                        <li class="nav-item"><a class="nav-link" href="/login"><i class="user icon"></i>Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/register"><i class="plus icon"></i>Sign Up</a></li>
+                    <% } else { %>
+                        <li class="nav-item"><a class="nav-link" href="#">Welcome <%= currentUser.username %></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/logout"><i class="sign out icon"></i>Logout</a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </nav>
     </div>
-    
-    
-    
     
     <div class="container">
         <% if(error && error.length > 0){ %>

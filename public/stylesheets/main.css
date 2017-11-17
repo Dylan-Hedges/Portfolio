@@ -1,10 +1,45 @@
-/*-----------------------NAV BAR-----------------------*/
-i.icon {
-    font-size: 120%;
-    padding: 0 2px 0 4px;
+body{
+  /*font-family: 'Lato', 'Arial', sans-serif;*/
+  /*color: #555;*/
+  background-color: #fff;
 }
 
-/*-----------------------LANDING PAGE (SPLASH)-----------------------*/
+/*-----------------------NAV BAR-----------------------*/
+.container-fluid{
+  padding: 0;
+}
+
+.bg-muted{
+  background-color: transparent;
+}
+
+i.icon {
+    font-size: 120%;
+    padding: 0 5px 0 4px;
+}
+
+i.icon.code{
+  font-size: 150%;
+}
+
+i.icon.code:hover{
+  color: #337AB7;
+}
+
+.navbar li a {
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar li a:hover, .navbar li a:active  {
+    border-color: #337AB7;
+}
+
+
+
+
+/*---------------------------------------------LANDING PAGE (SPLASH)--------------------------------------------------------*/
 .landing-splash-page{
     padding-bottom: 35vh;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../images/1.jpg);
@@ -34,16 +69,12 @@ i.icon {
 }
 
 
-/*----LANDING PAGE (ICONS)--------*/
-.landing-icons-page{
-}
-
-
+/*----ICONS--------*/
 .landingicons {
   margin-top: 15%;
   font-size: 550%;
   text-align: center;
-  color: lightblue;
+  color: #337AB7;
 }
 
 .landingiconstext{
@@ -52,10 +83,10 @@ i.icon {
   font-size: 140%;
 }
 
-/*----LANDING PAGE (PROJECTS)--------*/
+/*----PROJECTS--------*/
 .landing-projects-page{
   padding-top: 3%;
-  background-color: grey;
+  background-color: #f4f4f4;
 }
 
 .landingcontent {
@@ -70,39 +101,50 @@ i.icon {
 .landingcontent p{
   padding-top: 5%;
   font-size: 120%;
+  color: #444;
 }
 
-/*----------------------------ABOUT PAGE----------------------------*/
-.aboutpage{
+/*--------------------------------------------------ABOUT PAGE-------------------------------------------------------------*/
+.about-page{
   margin-top: 1%;
 }
 
-.aboutpage h1 {
+.aboutcontent{
+  margin-bottom: 5%;
+}
+.aboutcontent h1 {
     text-align: center;
     margin-bottom: 3%;
 }
 
-.aboutpage img {
+.aboutcontent img {
   width: 100%;
 }
 
-.aboutcontent {
-  margin-top: 5%;
-}
-.aboutcontent img{
-  width: 100%;
+/*---*/
+.aboutexperience{
+  background-color: #f4f4f4;
 }
 
-.aboutcontent ul{
-  padding-top: 5%;
+.aboutjobdescription {
+  /*margin-top: 5%;*/
 }
 
-.aboutcontent li{
+.aboutjobdescription img{
+  width: 70%;
+  padding: 15% 0 10% 0;
+}
+
+.aboutjobdescription ul{
+  padding-top: 7%;
+}
+
+.aboutjobdescription li{
   padding: 1%;
 }
 
 
-/*-----------------------PROJECTS PAGE-----------------------*/
+/*--------------------------------------------------------PROJECTS PAGE-------------------------------------------------------------------*/
 .projectspage {
   margin-top: 1%;
 }
@@ -129,12 +171,12 @@ i.icon {
   margin: 10% 0 5% 0;
 }
 
-/*-----------------------BLOG PAGE-----------------------*/
+/*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
 .container .jumbotron{
     margin-top: 1%;
 }
 
-/*-----------------------CONTACT PAGE-----------------------*/
+/*--------------------------------------------------------CONTACT PAGE---------------------------------------------*/
 .contactpage {
   margin-top: 1%;
 }
