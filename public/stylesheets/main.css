@@ -185,6 +185,19 @@ i.icon.code:hover{
     margin-top: 1%;
 }
 
+.formstyle{
+    padding: 1% 20% 0 20%;
+}
+
+.formstyle h1{
+    margin: 1% 0 5% 0;
+    text-align: center;
+}
+
+.delete-form{
+    display: inline;
+}
+
 /*--------------------------------------------------------CONTACT PAGE---------------------------------------------*/
 .contactpage {
   margin-bottom: 15vh;
@@ -217,22 +230,33 @@ i.icon.code:hover{
 }
 
 
-/*-----------------------LOGIN AND REGISTER PAGES-----------------------*/
-.formstyle{
-    padding: 1% 20% 0 20%;
+/*----------------------------------LOGIN PAGE----------------------------------*/
+
+.loginpage{
+    padding: 5vh 0 70vh 0;
+    font-size: 110%;
 }
 
-.formstyle h1{
-    margin: 1% 0 5% 0;
-    text-align: center;
+.loginpage .container {
+      padding: 1% 15% 0 15%;
 }
 
-.loginformstyle{
-    padding: 1% 10% 0 10%;
+.loginpage h1{
+  text-align: center;
+}
+/*----------------------------------REGISTER PAGE----------------------------------*/
+
+.registerpage{
+    padding: 5vh 0 70vh 0;
+    font-size: 110%;
 }
 
-.delete-form{
-    display: inline;
+.registerpage .container {
+      padding: 1% 15% 0 15%;
+}
+
+.registerpage h1{
+  text-align: center;
 }
 
 

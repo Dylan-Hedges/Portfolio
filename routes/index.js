@@ -136,11 +136,8 @@ router.post("/send", function(req, res){
             req.flash("success", "Message successfully sent, i will be in touch soon!");
             res.redirect("contact");            
         }
-
-
     });
     
-            
 });
 
 
