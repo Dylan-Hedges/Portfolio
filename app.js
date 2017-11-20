@@ -10,7 +10,9 @@ var express         = require("express"),
     Blogpost      = require("./models/blogpost"),
     Comment         = require("./models/comment"),
     User            = require("./models/user"),
-    seedDB          = require("./seeds");
+    seedDB          = require("./seeds"),
+    //Contact form
+    nodemailer      = require("nodemailer");
     
 //----------------REQUIRE ROUTES--------------------
 var commentRoutes       = require("./routes/comments"),
@@ -30,12 +32,17 @@ mongoose.Promise = global.Promise;
 //----------------USE PACKAGES--------------------
 
 app.use(bodyParser.urlencoded({extended: true}));
+//Contact page - middleware
+app.use(bodyParser.json());
 app.set("view engine", "ejs");
+//Static link to public directory which contains all images, CSS etc.
 app.use(express.static(__dirname + "/public"));
+//Treats POST requests as PUT
 app.use(methodOverride("_method"));
 app.use(flash());
 
 //seedDB();
+
 
 //----------------PASSPORT CONFIG--------------------
 app.use(require("express-session")({
@@ -63,5 +70,5 @@ app.use(commentRoutes);
 
 //--------------------LISTENER--------------------
 app.listen(process.env.PORT, process.env.IP, function(){
-   console.log("Server has startd") 
+   console.log("Server has started") 
 });

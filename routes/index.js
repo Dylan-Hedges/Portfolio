@@ -2,7 +2,10 @@ var express = require("express");
 var router = express.Router();
 var passport = require("passport");
 var User = require("../models/user");
+//Contact form
+var nodemailer = require("nodemailer");
 
+//We use router and not app as it links back to the app.js file
 
 //ROOT ROUTE
 router.get("/", function(req, res){
@@ -19,10 +22,7 @@ router.get("/projects", function(req, res){
    res.render("projects"); 
 });
 
-//CONTACT ROUTE
-router.get("/contact", function(req, res){
-   res.render("contact"); 
-});
+
 
 //--------------------REGISTER----------------------------------------
 //REGISTER ROUTE (form)
@@ -66,6 +66,83 @@ router.get("/logout", function(req, res){
    req.flash("success", "Logged you out");
    res.redirect("/blogposts");
 });
+
+//--------------------CONTACT PAGE----------------------------------------
+//CONTACT ROUTE
+router.get("/contact", function(req, res){
+   res.render("contact"); 
+});
+
+//CONTACT FORM
+router.post("/send", function(req, res){
+    var contactname = req.body.contactname,
+        email = req.body.email,
+        company = req.body.company,
+        title = req.body.title,
+        message = req.body.message;
+    //Content that is delivered to my email
+    var output = `    
+        <p>${message}</p>
+        <h4><u>Contact Details</u></h4>
+        <p><b>Name:</b> ${contactname}<br>
+        <b>Company:</b> ${company}<br>
+        <b>Email:</b> ${email}
+        </p>
+    `;
+
+    //Account connection and authorization
+    let transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: {
+            type: "OAuth2",
+            clientID: "ENTER CLIENT ID",
+            clientSecret: "ENTER CLIENT SECRET"
+        }
+    });
+    
+    //Listens for new access tokens, if an access token expires it uses refreshToken to generate a new access token
+   transporter.on('token', token => {
+        console.log('A new access token was generated');
+        console.log('User: %s', token.user);
+        console.log('Access Token: %s', token.accessToken);
+        console.log('Expires: %s', new Date(token.expires));
+    });
+    
+    //Sending information
+    let mailOptions = {
+        from: `${contactname} <ENTER EMAIL>`, // sender address
+        to: "ENTER EMAIL", // list of receivers
+        subject: `Nodemailer: ${title}`, // Subject line
+        text: 'No message entered.', // text if nothing is filled out
+        html: output, // html body
+        auth: {
+            user: "ENTER EMAIL",
+            refreshToken: "ENTER REFRESH TOKEN",
+            accessToken: "ENTER ACCESS TOKEN"
+        }
+    };
+    //Send mail
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.log(error);
+            req.flash("error", "Message failed to send.");
+            res.redirect("contact");    
+        }else{
+            // console.log('Message sent: %s', info.messageId);
+            // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+            
+            req.flash("success", "Message successfully sent, i will be in touch soon!");
+            res.redirect("contact");            
+        }
+
+
+    });
+    
+            
+});
+
 
 //--------------------EXPORT----------------------------------------
 module.exports = router;

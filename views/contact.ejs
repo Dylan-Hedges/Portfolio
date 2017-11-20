@@ -1,48 +1,55 @@
 <% include partials/header %>
 
+<% var msg %>
 
-<div class="container contactpage">
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1>Contact Me</h1>
-        </div>
-    </div>
-    <div class="row contacticons">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <i class="linkedin square icon"></i>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <i class="github icon"></i>        
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <i class="codepen icon"></i>        
-        </div>
-    </div>
-    <div class="row contactdownload">
-        <div>
-            <div class="col-lg-6 col-md-3 col-sm-3 col-xs-3">
-                <i class="cloud download icon"></i>
+<div class=" contactpage">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1>Contact Me</h1>
             </div>
         </div>
-        <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8">
-            <h3>Download a copy of my resume here</h3>
+        <div class="row contacticons">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <a href="#"><i class="linkedin square icon"></i></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <a href="#"><i class="github icon"></i></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <a href="#"><i class="codepen icon"></i></a>
+            </div>
         </div>
-    </div>
-    <div class="row contactform">
-        <form action="/login" method="post">
-            <div class="form-group">
-                <input type="text" class="form-control" name="username" placeholder="Name">
+        <div class="row contactdownload">
+            <div>
+                <div class="col-lg-6 col-md-3 col-sm-3 col-xs-3">
+                    <a href="#"><i class="cloud download icon"></i></a>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" name="username" placeholder="Contact email">
+            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8">
+                <h3>Download a copy of my resume here</h3>
             </div>
-            <div class="form-group">
-                <textarea rows="10" cols="90">
-                    
-                </textarea>            
-            </div>
-            <button type="submit" class="btn btn-primary" value="Login!">Submit</button>
-        </form>
+        </div>
+        <div class="row contactform">
+            <form method="post" action="send">
+                <div class="form-group">
+                    <input type="text" name="contactname" class="form-control"  placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="company" class="form-control"  placeholder="Company">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="title" class="form-control"  placeholder="Message Title">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="10" cols="90"></textarea>            
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
 </div>
 
