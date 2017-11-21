@@ -13,7 +13,6 @@ body{
 /*-----------------------NAV BAR-----------------------*/
 .navbarstyle{
   margin-bottom: 10vh;
-  /*padding-bottom:10vh;*/
 }
 
 
@@ -21,16 +20,16 @@ body{
   background-color: #fff;
 }
 
-i.icon {
+i {
     font-size: 120%;
     padding: 0 5px 0 4px;
 }
 
-i.icon.code{
+.fa-code{
   font-size: 150%;
 }
 
-i.icon.code:hover{
+.fa-code:hover{
   color: #337AB7;
 }
 
@@ -43,6 +42,13 @@ i.icon.code:hover{
 .navbar li a:hover, .navbar li a:active  {
     border-color: #337AB7;
 }
+
+.navbar .navbariconstyle li a:hover, .navbar .navbariconstyle li a:active  {
+    border-color: transparent;
+    color: #337AB7 !important;
+}
+
+
 
 
 
@@ -213,13 +219,16 @@ i.icon.code:hover{
 
 .contactdownload{
   text-align: center;
-  margin: 0 0 0 20%;
+  margin: 0 0 5% 20%;
   
 }
 .contactdownload i{
   font-size: 550%;
 }
 
+.contactdownload h4{
+  padding-top: 7%;
+}
 
 .contactform {
     padding: 1% 20% 0 20%;
