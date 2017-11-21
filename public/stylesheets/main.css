@@ -6,7 +6,6 @@ body{
 }
 
 
-
 .container-fluid{
   padding: 0;
 }
@@ -51,8 +50,8 @@ i.icon.code:hover{
 /*---------------------------------------------LANDING PAGE (SPLASH)--------------------------------------------------------*/
 .landing-splash-page{
     padding-bottom: 35vh;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.2))), url(5.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(5.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.2))), url(2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(2.jpg);
     background-size: cover;
 }
 
@@ -154,31 +153,28 @@ i.icon.code:hover{
 
 
 /*--------------------------------------------------------PROJECTS PAGE-------------------------------------------------------------------*/
-.projectspage {
-  margin-top: 1%;
+
+.projectspage img{
+  width: 100%;
 }
 
 .projectspage h1{
     text-align: center;
-
 }
 
-.projectsimages{
-  margin-top: 5%;
+.projectsgreybackground{
+  background-color: #f4f4f4;
 }
 
-.projectsimages img{
-  width: 100%;
+.projectscontent{
+  margin: 3% 20% 0 20%;
+  padding: 2%;
 }
 
-.projectstext{
-  text-align: center;
-  font-size: 120%;
+.projectstext {
+  padding-top: 4%;
 }
 
-.projectstext h3{
-  margin: 10% 0 5% 0;
-}
 
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
 .container .jumbotron{
