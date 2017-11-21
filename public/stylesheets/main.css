@@ -15,7 +15,6 @@ body{
   margin-bottom: 10vh;
 }
 
-
 .bg-muted{
   background-color: #fff;
 }
@@ -84,18 +83,20 @@ i {
 
 
 /*----ICONS--------*/
-.landingicons {
-  margin-top: 15%;
-  font-size: 550%;
+.landingpageicons{
+  margin: 5% 0 5% 0;
   text-align: center;
-  color: #337AB7;
+
 }
 
-.landingiconstext{
-  margin-bottom: 15%;
-  text-align: center;
-  font-size: 140%;
+.landingpageicons i{
+  font-size: 700%;
+    color: #337AB7;
 }
+.landingpageicons h4{
+  padding: 20% 0 30% 0;
+}
+
 
 /*----PROJECTS--------*/
 .landing-projects-page{
@@ -238,30 +239,32 @@ i {
 /*----------------------------------LOGIN PAGE----------------------------------*/
 
 .loginpage{
-    padding: 5vh 0 70vh 0;
-    font-size: 110%;
+  padding: 5vh 0 70vh 0;
+  font-size: 110%;
 }
 
 .loginpage .container {
-      padding: 1% 15% 0 15%;
+  padding: 1% 20% 0 20%;
 }
 
 .loginpage h1{
   text-align: center;
+  margin-bottom: 10%;
 }
 /*----------------------------------REGISTER PAGE----------------------------------*/
 
 .registerpage{
-    padding: 5vh 0 70vh 0;
-    font-size: 110%;
+  padding: 5vh 0 70vh 0;
+  font-size: 110%;
 }
 
 .registerpage .container {
-      padding: 1% 15% 0 15%;
+  padding: 1% 20% 0 20%;
 }
 
 .registerpage h1{
   text-align: center;
+  margin-bottom: 10%;
 }
 
 
@@ -269,13 +272,14 @@ i {
 
 .footer{
   margin-top: 2%;
-  padding: 20px 0 0 0;
+  padding: 15px 0 0 0;
   background-color: #337AB7;
 }
 
 .footerleft{
   text-align: left;
   font-size: 110%;
+  padding-top: 15px;
 }
 
 .footerleft ul li{
@@ -297,6 +301,8 @@ i {
   font-size: 200%;
   padding-right: 2%;
 }
+
+
 
 .footerright ul li{
   list-style: none;
