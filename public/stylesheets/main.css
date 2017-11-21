@@ -184,22 +184,25 @@ i {
 
 
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
-.container .jumbotron{
-    margin-top: 1%;
+
+/*Specific blog post page*/
+.showblogpostpage .container{
+  padding: 0 5% 5% 5%;
 }
 
-.formstyle{
-    padding: 1% 20% 0 20%;
+.showblogpostpage h4{
+  margin: 4% 0 2% 0;
 }
 
-.formstyle h1{
-    margin: 1% 0 5% 0;
-    text-align: center;
+.showblogpostpage img{
+  width: 100%;
 }
 
-.delete-form{
+.showblogpostpage .delete-form{
     display: inline;
 }
+
+
 
 /*--------------------------------------------------------CONTACT PAGE---------------------------------------------*/
 .contactpage {
@@ -213,7 +216,7 @@ i {
 }
 
 .contacticons {
-  font-size: 550%;
+  font-size: 650%;
   margin: 8% 0 5% 0;
   text-align: center;
 }
@@ -236,7 +239,7 @@ i {
 }
 
 
-/*----------------------------------LOGIN PAGE----------------------------------*/
+/*--------------------------------------------------------LOGIN PAGE--------------------------------------------------------*/
 
 .loginpage{
   padding: 5vh 0 70vh 0;
@@ -251,7 +254,7 @@ i {
   text-align: center;
   margin-bottom: 10%;
 }
-/*----------------------------------REGISTER PAGE----------------------------------*/
+/*-----------------------------------------------------REGISTER PAGE----------------------------------------------------------------*/
 
 .registerpage{
   padding: 5vh 0 70vh 0;
