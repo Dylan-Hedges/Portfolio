@@ -1,7 +1,8 @@
 <!--BLOGPOST EDIT-->
 <% include ../partials/header %>
 
-<div class="container formstyle">
+<section class="editcommentpage">
+    <div class="container">
         <h1>Edit <%= blogpost.name %></h1>
         <form action="/blogposts/<%= blogpost._id %>?_method=PUT" method="POST">
             <div class="form-group">
@@ -19,5 +20,5 @@
         </form>
         <a class="btn btn-sm btn-outline-primary" href="/blogposts/<%=blogpost._id%>" campground>Back</a>
     </div>
-
+</section>
 <% include ../partials/footer %>

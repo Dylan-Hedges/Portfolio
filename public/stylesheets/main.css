@@ -185,7 +185,7 @@ i {
 
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
 
-/*Specific blog post page*/
+/*-----SHOW BLOGPOST-----------*/
 .showblogpostpage .container{
   padding: 0 5% 5% 5%;
 }
@@ -199,7 +199,51 @@ i {
 }
 
 .showblogpostpage .delete-form{
+  display: inline;
+}
+
+.commentbuttons{
+  padding-bottom: 2%;
+}
+
+/*-----NEW/EDIT BLOGPOST-------*/
+.newblogpostpage{
+  margin-bottom: 50vh;
+}
+.newblogpostpage .container{
+  padding: 0 10% 0 10%;
+}
+
+.newblogpostpage h1{
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.newblogpostpage .form-control{
+  margin-top: 1%;
+}
+
+.newblogpostbuttons{
     display: inline;
+    margin-top: 2%;
+}
+
+/*-----NEW/EDIT COMMENT-------*/
+.newcommentpage, .editcommentpage{
+  margin: 5vh 0 70vh 0;
+}
+
+.newcommentpage .container .newcommentform, .editcommentpage .container .editcommentform  {
+  padding: 1% 25% 0 25%;
+}
+
+.newcommentpage h1, .editcommentpage h1 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.newcommentbuttons, .editcommentbuttons {
+  margin-top: 5%;
 }
 
 
@@ -237,7 +281,6 @@ i {
 .contactform {
     padding: 1% 20% 0 20%;
 }
-
 
 /*--------------------------------------------------------LOGIN PAGE--------------------------------------------------------*/
 
