@@ -201,8 +201,14 @@ i {
   padding: 0 5% 5% 5%;
 }
 
+
 .showblogpostpage h4{
   margin: 4% 0 2% 0;
+
+}
+
+#datepostedstyle{
+  background-color: #f4f4f4;
 }
 
 .showblogpostpage img{
