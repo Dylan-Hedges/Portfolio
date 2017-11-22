@@ -1,17 +1,27 @@
 <!--BLOGPOST INDEX-->
 
 <% include ../partials/header %>
-    
-    <div class="container">
-        <header class="jumbotron">
-                <h1>Welcome.</h1>
-                <p>Technology blog covering web development, cloud computing and technology.</p>
-                <% if(currentUser && currentUser.username == "admin"){ %>
-                    <p>
-                        <a class="btn btn-primary btn-lg" href="/blogposts/new">Add New Blog Post</a>
-                    </p>
-                <% } %>
-        </header>
+<section class="blogpostindex">
+    <div class="blogpostindexbackground">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h1>Welcome.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <p>Technology blog covering web development, cloud computing and technology.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <% if(currentUser && currentUser.username == "admin"){ %>
+                        <p><a class="btn btn-primary btn-lg" href="/blogposts/new">Add New Blog Post</a></p>
+                    <% } %>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
             <% blogposts.forEach(function(blogpost){ %>
@@ -31,7 +41,7 @@
                 </div>
             <% }); %>
     </div>    
-
+</section>
   
     
 <% include ../partials/footer %>

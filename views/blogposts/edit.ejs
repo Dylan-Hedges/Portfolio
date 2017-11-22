@@ -1,24 +1,36 @@
 <!--BLOGPOST EDIT-->
 <% include ../partials/header %>
 
-<section class="editcommentpage">
+<section class="editblogpostpage">
     <div class="container">
-        <h1>Edit <%= blogpost.name %></h1>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1>Edit post: <%= blogpost.name %></h1>
+            </div>
+        </div>
         <form action="/blogposts/<%= blogpost._id %>?_method=PUT" method="POST">
-            <div class="form-group">
-                <input class="form-control" type="text" name="blogpost[name]" value="<%= blogpost.name %>">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <input class="form-control" type="text" name="blogpost[name]" value="<%= blogpost.name %>">
+                </div>
             </div>
-            <div class="form-group">
-                <input class="form-control" type="text" name="blogpost[image]" value="<%= blogpost.image %>">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <input class="form-control" type="text" name="blogpost[image]" value="<%= blogpost.image %>">
+                </div>
             </div>
-            <div class="form-group">
-                <input class="form-control" type="text" name="blogpost[description]" value="<%= blogpost.description %>">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <textarea  rows="10" col="50" class="form-control" type="text" name="blogpost[description]"><%= blogpost.description %></textarea>
+                </div>
             </div>
-            <div class="form-group">
-                <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 editblogpostbuttons">
+                    <button class="btn btn-md btn-primary">Submit!</button>
+                    <a class="btn btn-md btn-outline-primary" href="/blogposts/<%=blogpost._id%>" campground>Back</a>
+                </div>
             </div>
         </form>
-        <a class="btn btn-sm btn-outline-primary" href="/blogposts/<%=blogpost._id%>" campground>Back</a>
     </div>
 </section>
 <% include ../partials/footer %>

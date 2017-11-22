@@ -47,6 +47,11 @@ i {
     color: #337AB7 !important;
 }
 
+#welcomemessage:hover{
+  color: rgba(0,0,0,.5);
+}
+
+
 
 
 
@@ -184,6 +189,12 @@ i {
 
 
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
+/*------BLOGPOST INDEX---------*/
+.blogpostindexbackground{
+  background-color: #f4f4f4;
+  padding: 4% 0 5% 0;
+  margin-bottom: 2%;
+}
 
 /*-----SHOW BLOGPOST-----------*/
 .showblogpostpage .container{
@@ -207,23 +218,23 @@ i {
 }
 
 /*-----NEW/EDIT BLOGPOST-------*/
-.newblogpostpage{
+.newblogpostpage, .editblogpostpage{
   margin-bottom: 50vh;
 }
-.newblogpostpage .container{
+.newblogpostpage .container, .editblogpostpage .container{
   padding: 0 10% 0 10%;
 }
 
-.newblogpostpage h1{
+.newblogpostpage h1, .editblogpostpage h1{
   text-align: center;
   margin-bottom: 5%;
 }
 
-.newblogpostpage .form-control{
+.newblogpostpage .form-control, .editblogpostpage .form-control {
   margin-top: 1%;
 }
 
-.newblogpostbuttons{
+.newblogpostbuttons, .editblogpostbuttons{
     display: inline;
     margin-top: 2%;
 }
