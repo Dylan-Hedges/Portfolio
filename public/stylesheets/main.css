@@ -87,7 +87,7 @@ i {
 }
 
 
-/*----------ICONS----------*/
+/*----------LANDING SKILLS----------*/
 .landingpageicons{
   text-align: center;
   margin-bottom: 2%;
@@ -106,30 +106,51 @@ i {
   padding: 20% 0 20% 0;
 }
 
-
-/*----------LANDING PROJECTS------------*/
-.landingprojectspage{
+/*----------LANDING EDUCATION------------*/
+.landingeducationpage {
   padding: 3% 0 2% 0 ;
   background-color: #f4f4f4;
 }
 
-.landingprojectspage i{
+.landingeducationpage i{
   padding-top: 30%;
   font-size: 700%;
   color: #337AB7;
 
 }
 
-.landingprojectspage h1{
+.landingeducationpage h1{
     text-align: center;
 }
 
-.landingprojectstext{
+.landingeducationtext{
   padding-top: 2%;
 }
 
-.landingprojectstext p{
+.landingeducationtext p{
   padding-top: 7%;
+}
+
+/*----------LANDING TOOLS------------*/
+.landingtoolspage{
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.landingtoolspage i{
+  font-size: 600%;
+  color: #337AB7;
+  padding-bottom: 5%;
+}
+
+.landingtoolspage h1{
+  margin: 5% 0 7% 0;
+}
+
+.landingtoolspage ul li{
+  list-style: none;
+  padding: 2% 15% 0 0;
+  font-size: 120%;
 }
 
 /*--------------------------------------------------ABOUT PAGE-------------------------------------------------------------*/
@@ -280,7 +301,15 @@ i {
 /*--------------------------------------------------------CONTACT PAGE---------------------------------------------*/
 .contactpage {
   margin-top: 10vh;
-  margin-bottom: 15vh;
+  margin-bottom: 15vh;  color: #337AB7;
+}
+
+.contactpage a i{
+  color: #327AB7;
+}
+
+.contactpage a i:hover{
+  color: #4796d8;
 }
 
 .contactpage h1 {
@@ -293,12 +322,10 @@ i {
   font-size: 650%;
   margin: 8% 0 5% 0;
   text-align: center;
-}
 
+}
 .contactdownload{
-  text-align: center;
-  margin: 0 0 5% 20%;
-  
+  padding: 0 0 3% 25%;
 }
 .contactdownload i{
   font-size: 550%;
