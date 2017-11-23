@@ -137,39 +137,34 @@ i {
   margin-top: 5%;
 }
 
-.aboutcontent{
-  margin-bottom: 2%;
+.aboutpage .container-fluid{
+  padding: 0 5% 0 5%;
 }
-.aboutcontent h1 {
+
+
+.aboutcontent{
+  padding: 3% 0 3% 0;
+}
+
+.aboutintro{
+  padding: 0 0 3% 0;
+}
+
+.aboutcontent h1, .aboutintro h1 {
     text-align: center;
     margin-bottom: 3%;
 }
 
-.aboutcontent img {
+.aboutcontent img, .aboutintro img {
   width: 100%;
 }
 
-/*---*/
+.aboutcontent h5, .aboutintro h5{
+  margin: 1.5% 0 4% 0;
+}
+
 .aboutexperience{
   background-color: #f4f4f4;
-}
-
-.aboutjobdescription {
-  /*margin-top: 5%;*/
-}
-
-.aboutjobdescription img{
-  width: 70%;
-  padding: 15% 0 10% 0;
-}
-
-.aboutjobdescription h5{
-  margin: 7% 0 2% 0;
-}
-
-
-.aboutjobdescription li{
-  padding: 0.5%;
 }
 
 
