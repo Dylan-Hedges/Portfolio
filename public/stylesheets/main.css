@@ -10,6 +10,10 @@ body{
   padding: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 /*-----------------------NAV BAR-----------------------*/
 .navbarstyle{
   /*margin-bottom: 10vh;*/
@@ -138,18 +142,18 @@ i {
 }
 
 .landingtoolspage i{
-  font-size: 600%;
+  font-size: 650%;
   color: #337AB7;
   padding-bottom: 5%;
 }
 
 .landingtoolspage h1{
-  margin: 5% 0 7% 0;
+  margin: 5% 0 6% 0;
 }
 
 .landingtoolspage ul li{
   list-style: none;
-  padding: 2% 15% 0 0;
+  padding: 3% 15% 0 0;
   font-size: 120%;
 }
 
@@ -181,9 +185,12 @@ i {
 }
 
 .aboutcontent h5, .aboutintro h5{
-  margin: 1.5% 0 4% 0;
+  margin-bottom: 3%;
 }
 
+.abouttext{
+  margin-top: 3%;
+}
 .aboutexperience{
   background-color: #f4f4f4;
 }
@@ -202,6 +209,10 @@ i {
     text-align: center;
 }
 
+.projectspage h3{
+    margin-bottom: 3%;
+}
+
 .projectsgreybackground{
   background-color: #f4f4f4;
 }
@@ -212,7 +223,7 @@ i {
 }
 
 .projectstext {
-  padding-top: 4%;
+  /*padding-top: 4%;*/
 }
 
 
