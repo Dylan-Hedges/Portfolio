@@ -243,15 +243,17 @@ margin-left: 10%;
 }
 
 .projectscontent{
-  margin: 3% 20% 0 20%;
+  margin: 3% 5% 0 5%;
   padding: 2%;
 }
 
 .projectstext {
-  /*padding-top: 4%;*/
+  margin-top: 4%;
 }
 
-
+#portfolioimage{
+  margin-top: 7%;
+}
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
 /*------BLOGPOST INDEX---------*/
 .blogpostindexbackground{
@@ -337,7 +339,8 @@ margin-left: 10%;
 /*--------------------------------------------------------CONTACT PAGE---------------------------------------------*/
 .contactpage {
   margin-top: 10vh;
-  margin-bottom: 15vh;  color: #337AB7;
+  margin-bottom: 15vh;  
+  
 }
 
 .contactpage a i{
@@ -358,10 +361,12 @@ margin-left: 10%;
   font-size: 650%;
   margin: 8% 0 5% 0;
   text-align: center;
+  color: #337AB7;
 
 }
 .contactdownload{
   padding: 0 0 3% 25%;
+  color: #337AB7;
 }
 .contactdownload i{
   font-size: 550%;
@@ -410,7 +415,6 @@ margin-left: 10%;
 /*--------------------------------------------------------FOOTER-------------------------------------------------------------------*/
 
 .footer{
-  margin-top: 2%;
   padding: 15px 0 0 0;
   background-color: #337AB7;
 }
