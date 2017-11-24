@@ -117,13 +117,13 @@ i {
 }
 
 .landingeducationpage i{
-  padding-top: 30%;
-  font-size: 700%;
+  font-size: 600%;
   color: #337AB7;
 
 }
 
 .landingeducationpage h1{
+    margin-bottom: 2%;
     text-align: center;
 }
 
@@ -131,9 +131,25 @@ i {
   padding-top: 2%;
 }
 
-.landingeducationtext p{
-  padding-top: 7%;
+.landingeducationtext h5{
+  padding-top: 3%;
 }
+
+.landingeducationpage .fa-mortar-board{
+margin-top: 10%;
+}
+
+
+.landingeducationpage .fa-building-o{
+margin-top: 30%;
+margin-left: 15%;
+}
+
+.landingeducationpage .fa-cloud{
+margin-top: 10%;
+margin-left: 10%;
+}
+
 
 /*----------LANDING TOOLS------------*/
 .landingtoolspage{
@@ -160,6 +176,15 @@ i {
 /*--------------------------------------------------ABOUT PAGE-------------------------------------------------------------*/
 .aboutpage{
   margin-top: 5%;
+}
+
+.aboutpage i{
+  font-size: 700%;
+  color: #337AB7;
+}
+
+.aboutpage h1{
+  text-align: center;
 }
 
 .aboutpage .container-fluid{
