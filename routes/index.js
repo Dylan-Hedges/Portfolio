@@ -5,6 +5,16 @@ var User = require("../models/user");
 //Contact form
 var nodemailer = require("nodemailer");
 
+//API key storage
+var config = require("../config.js");
+var clientID = config.clientID;
+var clientSecret = config.clientID;
+var user = config.user;
+var refreshToken = config.refreshToken;
+var accessToken = config.accessToken;
+
+
+
 //We use router and not app as it links back to the app.js file
 
 //ROOT ROUTE
@@ -97,8 +107,11 @@ router.post("/send", function(req, res){
         secure: true,
         auth: {
             type: "OAuth2",
-            clientID: "ENTER CLIENT ID",
-            clientSecret: "ENTER CLIENT SECRET"
+            user: user,
+            clientID: clientID,
+            clientSecret: clientSecret,
+            refreshToken: refreshToken,
+            accessToken: accessToken
         }
     });
     
@@ -112,16 +125,16 @@ router.post("/send", function(req, res){
     
     //Sending information
     let mailOptions = {
-        from: `${contactname} <ENTER EMAIL>`, // sender address
-        to: "ENTER EMAIL", // list of receivers
+        from: `${contactname} <${user}>`, // sender address
+        to: user, // list of receivers
         subject: `Nodemailer: ${title}`, // Subject line
         text: 'No message entered.', // text if nothing is filled out
-        html: output, // html body
-        auth: {
-            user: "ENTER EMAIL",
-            refreshToken: "ENTER REFRESH TOKEN",
-            accessToken: "ENTER ACCESS TOKEN"
-        }
+        html: output // html body
+        // auth: {
+        //     user: user,
+        //     refreshToken: refreshToken,
+        //     accessToken: accessToken
+        // }
     };
     //Send mail
     transporter.sendMail(mailOptions, (error, info) => {
