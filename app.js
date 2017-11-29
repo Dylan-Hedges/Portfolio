@@ -12,7 +12,8 @@ var express         = require("express"),
     User            = require("./models/user"),
     seedDB          = require("./seeds"),
     //Contact form
-    nodemailer      = require("nodemailer");
+    nodemailer      = require("nodemailer"),
+    config = require("./config.js");
     
 //----------------REQUIRE ROUTES--------------------
 var commentRoutes       = require("./routes/comments"),
@@ -20,12 +21,12 @@ var commentRoutes       = require("./routes/comments"),
     indexRoutes         = require("./routes/index")
 
 //----------------DATABASE CONNECTION--------------------
-mongoose.connect("mongodb://localhost/portfolio", {useMongoClient: true});
-// var url = process.env.DATABASEURL || "mongodb://localhost/portfolio";
-// mongoose.connect(url);
+//Local DB
+// mongoose.connect("mongodb://localhost/portfolio", {useMongoClient: true});
 
 //Production DB (mlab)
-//mongoose.connect("enter Mlab URL HERE", {useMongoClient: true});
+var mlabconnection = config.mlabconnection;
+mongoose.connect(mlabconnection, {useMongoClient: true});
 
 mongoose.Promise = global.Promise;
 
