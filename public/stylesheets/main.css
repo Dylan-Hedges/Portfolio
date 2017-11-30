@@ -1,12 +1,16 @@
 
-/** { margin:0; padding:0; box-sizing:border-box; }*/
 
-body, html{
+html{
+  /*Footer*/
+  position: relative;
+  min-height: 100%;
+}
+
+body{
   background-color: #fff;
   color: #444;
-  /*margin: 0 !important;*/
-  /*padding: 0 !important;*/
-
+  /*Footer*/
+  margin-bottom: 60px;
 }
 
 .container-fluid{
@@ -407,16 +411,18 @@ i {
 
 /*--------------------------------------------------------FOOTER-------------------------------------------------------------------*/
 .footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #337AB7;
-  padding-top: 15px;
-  padding-bottom: 5px;
+  height: 60px; /* Set the fixed height of the footer here */
 }
-
+/*--Footer Text--*/
 .footerleft{
   float: left;
   list-style: none;
   display: inline-block;
-  padding-top: 5px;
+  padding-top: 20px;
 }
 
 .footerleft a{
@@ -427,12 +433,13 @@ i {
 .footerleft a:hover{
   color: #fff;
 }
-
+/*--Footer Icons--*/
 .footerright {
   float: right;
+  display: inline-block;
   list-style: none;
   padding-right: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
 }
 
 .footerright a{
