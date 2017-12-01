@@ -196,29 +196,42 @@ i {
   padding: 0 5% 0 5%;
 }
 
-.aboutcontent{
-  padding: 3% 0 3% 0;
-}
-
 .aboutintro{
   padding: 0 0 3% 0;
 }
 
-.aboutcontent h1, .aboutintro h1 {
-    text-align: center;
-    margin-bottom: 3%;
+.aboutintro h1 {
+  /*text-align: see @media queries*/
+  margin: 3% 0 4% 0;
+}
+
+.aboutintro p{
+  /*text-align: see @media queries*/
+}
+
+.aboutintrotext{
+  padding: 4% 1% 5% 1%;
+}
+
+.aboutcontent{
+  padding: 3% 0 3% 0;
+}
+
+.aboutcontent h5{
+  margin-bottom: 3%;
+  /*text-align: see @media queries*/
+}
+
+.aboutcontent p{
+  /*text-align: see @media queries*/
 }
 
 .aboutcontent img, .aboutintro img {
-  width: 100%;
+  /*width: see @media queries*/
 }
 
-.aboutcontent h5, .aboutintro h5{
-  margin-bottom: 3%;
-}
-
-.abouttext{
-  margin-top: 3%;
+.abouttext {
+  padding: 3% 1% 5% 1%;
 }
 
 /*--------------------------------------------------------PROJECTS PAGE-------------------------------------------------------------------*/
@@ -470,6 +483,12 @@ i {
   .splashheader h2 {
     font-size: 200%;
   }
+  .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
+    text-align: center;
+  }
+  .aboutcontent img, .aboutintro img {
+    width: 70%;
+  }
 }
 
 /*Small "col-sm"*/
@@ -488,6 +507,12 @@ i {
   }
   .splashheader h2 {
     font-size: 200%;
+  }
+  .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
+    text-align: center;
+  }
+  .aboutcontent img, .aboutintro img {
+    width: 70%;
   }
 }
 
@@ -508,6 +533,15 @@ i {
   .splashheader h2 {
     font-size: 250%;
   }
+  .aboutcontent {
+    margin: 0 auto;
+  }
+  .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
+    text-align: center;
+  }
+  .aboutcontent img, .aboutintro img {
+    width: 70%;
+  }
 }
 
 /*Large "col-lg"*/
@@ -526,6 +560,15 @@ i {
   }
   .splashheader h2 {
     font-size: 300%;
+  }
+  .aboutintro p{
+    text-align: left;
+  }
+  .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
+    text-align: center;
+  }
+  .aboutcontent img, .aboutintro img {
+    width: 70%;
   }
 }
 
@@ -546,6 +589,12 @@ i {
   }
   .splashheader h2 {
     font-size: 350%;
+  }
+  .aboutcontent h5, .aboutcontent p, .aboutintro p{
+    text-align: left;
+  }
+  .aboutcontent img, .aboutintro img {
+    width: 100%;
   }
 
 }
