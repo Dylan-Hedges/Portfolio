@@ -66,6 +66,10 @@ i {
   color: rgba(0,0,0,.5);
 }
 
+#navbarlogo{
+  border-radius: 25%;
+}
+
 /*---------------------------------------------LANDING PAGE (SPLASH)--------------------------------------------------------*/
 .landingsplashpage{
     padding-bottom: 35vh;
