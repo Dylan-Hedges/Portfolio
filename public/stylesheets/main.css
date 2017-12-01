@@ -72,6 +72,7 @@ i {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(2.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(2.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .splashheader {
@@ -124,16 +125,11 @@ i {
 
 /*----------LANDING EDUCATION------------*/
 .landingeducationpage {
-  padding: 3% 0 2% 0 ;
-}
-
-.landingeducationpage i{
-  font-size: 600%;
-  color: #337AB7;
+  padding: 2% 0 2% 0 ;
 }
 
 .landingeducationpage h1{
-  margin-bottom: 2%;
+  margin: 3% 0 3% 0;
   text-align: center;
 }
 
@@ -141,24 +137,16 @@ i {
   padding-top: 2%;
 }
 
+.educationiconstyle{
+  font-size: 600%;
+  color: #337AB7;
+  text-align: center;
+}
+
 .landingeducationtext h5{
-  padding-top: 3%;
+  padding-top: 5%;
 }
 
-.landingeducationpage .fa-mortar-board{
-  margin-top: 10%;
-}
-
-.landingeducationpage .col-lg-2 .fa-building-o{
-  margin-top: 30%;
-  margin-left: 15%;
-}
-
-
-.landingeducationpage .fa-cloud{
-  margin-top: 10%;
-  margin-left: 10%;
-}
 
 /*----------LANDING TOOLS------------*/
 .landingtoolspage{
@@ -454,3 +442,70 @@ i {
 .footerright a i:hover{
   color: #fff;
 }
+
+
+/*------------------------------@Media Queries---------------------------------*/
+/*Extra small "col"*/
+@media only screen and (min-width: 0px) {
+  .landingeducationtext p, .landingeducationtext h5{
+    text-align: center;
+  }
+  .landingsplashpage{
+      background-attachment: scroll;
+  }
+}
+
+/*Small "col-sm"*/
+@media only screen and (min-width: 576px) {
+  .landingeducationtext p, .landingeducationtext h5{
+    text-align: center;
+  }
+  .landingsplashpage{
+      background-attachment: scroll;
+  }
+}
+
+/*Medium "col-md"*/
+@media only screen and (min-width: 768px) {
+  .landingeducationtext p, .landingeducationtext h5{
+    text-align: center;
+  }
+  .landingsplashpage{
+      background-attachment: scroll;
+  }
+}
+
+/*Large "col-lg"*/
+@media only screen and (min-width: 992px) {
+  .landingeducationtext p, .landingeducationtext h5{
+    text-align: left;
+  }
+  .landingsplashpage{
+      background-attachment: fixed;
+  }
+
+}
+
+
+/*Extra large "col-xl*/
+@media only screen and (min-width: 1200px) {
+  .landingeducationtext p, .landingeducationtext h5{
+    text-align: left;
+  }
+  .landingsplashpage{
+      background-attachment: fixed;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
