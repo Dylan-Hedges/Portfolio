@@ -51,19 +51,21 @@
                 </div>
             </nav>
         </div>
-        
-        <div class="container flashmessagestyle">
-            <% if(error && error.length > 0){ %>
+        <% if(error && error.length > 0){ %>
+            <div class="container flashmessagestyle">
                 <div class="alert alert-danger" role="alert">
                     <%= error %>
                 </div>
                 <% }%>
+            </div>
             <% if(success && success.length > 0){ %>
+            <div class="container flashmessagestyle">
                 <div class="alert alert-success" role="alert">
                     <%= success %>
                 </div>
-            <% } %>
-        </div>
+            </div>
+        <% } %>
+
         
    
     
