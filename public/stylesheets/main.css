@@ -77,6 +77,9 @@ i {
   border-radius: 25%;
 }
 
+.flashmessagestyle{
+  margin-top: 3%;
+}
 /*---------------------------------------------LANDING PAGE (SPLASH)--------------------------------------------------------*/
 .landingsplashpage{
   padding-bottom: 35vh;

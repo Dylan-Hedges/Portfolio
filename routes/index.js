@@ -14,8 +14,7 @@ var refreshToken = config.refreshToken;
 var accessToken = config.accessToken;
 
 
-
-//We use router and not app as it links back to the app.js file
+//".router" is used isntead of "app." as our routes are now in a seperate file that links back to the "app.js" file
 
 //ROOT ROUTE
 router.get("/", function(req, res){
@@ -50,7 +49,7 @@ router.post("/register", function(req, res){
         }
         passport.authenticate("local")(req, res, function(){
             req.flash("success", "Welcome " + user.username);
-            res.redirect("/blogposts");
+            res.redirect("back");
         });
     });
 });
@@ -65,6 +64,7 @@ router.get("/login", function(req, res){
 router.post("/login",  passport.authenticate("local", 
     {
         successRedirect: "/blogposts",
+        successFlash: "Welcome, you have successfully logged in",
         failureRedirect: "/login",
         failureFlash: "Invalid username or password."
     }), function(req, res){
@@ -74,7 +74,7 @@ router.post("/login",  passport.authenticate("local",
 router.get("/logout", function(req, res){
    req.logout();
    req.flash("success", "Logout successful.");
-   res.redirect("/blogposts");
+   res.redirect("back");
 });
 
 //--------------------CONTACT PAGE----------------------------------------
