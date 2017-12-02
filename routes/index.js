@@ -48,8 +48,8 @@ router.post("/register", function(req, res){
             return res.redirect("register");
         }
         passport.authenticate("local")(req, res, function(){
-            req.flash("success", "Welcome " + user.username);
-            res.redirect("back");
+            req.flash("success", "Welcome, " + user.username + ".");
+            res.redirect("/blogposts");
         });
     });
 });
@@ -64,10 +64,11 @@ router.get("/login", function(req, res){
 router.post("/login",  passport.authenticate("local", 
     {
         successRedirect: "/blogposts",
-        successFlash: "Welcome, you have successfully logged in",
+        successFlash: "Welcome, you have successfully logged in.",
         failureRedirect: "/login",
         failureFlash: "Invalid username or password."
     }), function(req, res){
+        //No action required for callback 
 });
 
 //LOGOUT ROUTE

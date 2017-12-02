@@ -32,7 +32,6 @@ router.post("/blogposts/:id/comments", middleware.isLoggedIn, function(req, res)
                     comment.save();
                     blogpost.comments.push(comment);
                     blogpost.save();
-                    req.flash("success", "Successfully added comment");
                     res.redirect('/blogposts/' + blogpost._id);
                 }
             });

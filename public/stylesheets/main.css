@@ -258,10 +258,6 @@ i {
 
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
 /*------BLOGPOST INDEX---------*/
-/*.blogpostindexintro{*/
-/*  padding: 7% 0 3% 0;*/
-/*  margin-bottom: 2%;*/
-/*}*/
 
 .blogpostindexintro h1{
   text-align: left;
@@ -288,7 +284,7 @@ i {
 }
 
 .showblogpostpage img{
-  width: 100%;
+  width: 70%;
 }
 
 .showblogpostpage .delete-form{

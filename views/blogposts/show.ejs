@@ -32,7 +32,6 @@
         </div>
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                <hr>
                 <a class = "btn btn-md btn-success" href="/blogposts/<%= blogpost._id %>/comments/new">Add Comment</a>
                 <a class="btn btn-md btn-primary" href="/blogposts">Back</a>
             </div>
@@ -40,9 +39,9 @@
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <% blogpost.comments.forEach(function(comment){ %>
-                <hr>
+                    <hr>
                     <p><%= comment.text %></p>
-                    <span class="commentbuttons">Posted by <strong><%= comment.author.username %></strong> on: <strong><%= blogpost.created.toDateString() %></span></strong>
+                    <span class="commentbuttons">Posted by <strong><%= comment.author.username %></strong> on: <strong><%= comment.created.toDateString() %></span></strong>
             </div>
         </div>
         <div class="row">
@@ -56,6 +55,7 @@
                 <% }) %> 
             </div>
         </div>
+    </div>
 </section>
 
 <% include ../partials/footer %>
