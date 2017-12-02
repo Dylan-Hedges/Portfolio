@@ -1,5 +1,3 @@
-
-
 html{
   /*Footer*/
   position: relative;
@@ -30,6 +28,14 @@ button{
 }
 
 /*-----------------------NAV BAR-----------------------*/
+.navbar{
+  padding: 1px 10px 4px 10px;
+}
+
+.navbar-brand{
+  margin-right: 5px;
+}
+
 .bg-muted{
   background-color: #fff;
 }
@@ -39,11 +45,12 @@ i {
     padding: 0 5px 0 4px;
 }
 
-.fa-code{
-  font-size: 150%;
+.fa-pied-piper{
+  font-size: 170%;
+  color: rgba(0,0,0,.5);
 }
 
-.fa-code:hover{
+.fa-pied-piper:hover{
   color: #337AB7;
 }
 
@@ -72,11 +79,11 @@ i {
 
 /*---------------------------------------------LANDING PAGE (SPLASH)--------------------------------------------------------*/
 .landingsplashpage{
-    padding-bottom: 35vh;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(2.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+  padding-bottom: 35vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .splashheader {
@@ -482,10 +489,10 @@ i {
     padding: 10% 0 10% 0;
   }
   .splashheader h1 {
-    font-size: 400%;
+    font-size: 350%;
   }
   .splashheader h2 {
-    font-size: 200%;
+    font-size: 150%;
   }
   .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
     text-align: center;
@@ -507,10 +514,10 @@ i {
     padding: 10% 0 10% 0;
   }
   .splashheader h1 {
-    font-size: 400%;
+    font-size: 350%;
   }
   .splashheader h2 {
-    font-size: 200%;
+    font-size: 150%;
   }
   .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
     text-align: center;
@@ -532,10 +539,10 @@ i {
     padding: 20% 0 20% 0;
   }
   .splashheader h1 {
-    font-size: 550%;
+    font-size: 600%;
   }
   .splashheader h2 {
-    font-size: 250%;
+    font-size: 200%;
   }
   .aboutcontent {
     margin: 0 auto;
@@ -560,10 +567,10 @@ i {
     padding: 20% 0 20% 0;
   }
   .splashheader h1 {
-    font-size: 600%;
+    font-size: 650%;
   }
   .splashheader h2 {
-    font-size: 300%;
+    font-size: 250%;
   }
   .aboutintro p{
     text-align: left;
@@ -589,10 +596,10 @@ i {
     padding: 20% 0 20% 0;
   }
   .splashheader h1 {
-    font-size: 650%;
+    font-size: 700%;
   }
   .splashheader h2 {
-    font-size: 350%;
+    font-size: 300%;
   }
   .aboutcontent h5, .aboutcontent p, .aboutintro p{
     text-align: left;
