@@ -29,7 +29,7 @@ button{
 
 /*-----------------------NAV BAR-----------------------*/
 .navbar{
-  padding: 1px 10px 4px 10px;
+  padding: 1px 15px 4px 15px;
 }
 
 .navbar-brand{
@@ -61,12 +61,12 @@ i {
 }
 
 .navbar li a:hover, .navbar li a:active  {
-    border-color: #337AB7;
+  border-color: #337AB7;
 }
 
 .navbar .navbariconstyle li a:hover, .navbar .navbariconstyle li a:active  {
-    border-color: transparent;
-    color: #337AB7 !important;
+  border-color: transparent;
+  color: #337AB7 !important;
 }
 
 #welcomemessage:hover{
@@ -190,42 +190,27 @@ i {
 }
 
 /*--------------------------------------------------ABOUT PAGE-------------------------------------------------------------*/
-.aboutpage{
-  margin-top: 5%;
-}
-
-.aboutpage i{
-  font-size: 700%;
-  color: #337AB7;
-}
-
-.aboutpage h1{
+.aboutpage h1 {
   text-align: center;
+  /*margin: see @media queries*/
 }
 
-.aboutpage .container-fluid{
-  padding: 0 5% 0 5%;
+.aboutpage img{
+  /*width: see @media queries;*/
 }
 
 .aboutintro{
-  padding: 0 0 3% 0;
-}
-
-.aboutintro h1 {
-  /*text-align: see @media queries*/
-  margin: 3% 0 4% 0;
+  margin: 0 5% 0 5%;
+  padding: 2%;
 }
 
 .aboutintro p{
   /*text-align: see @media queries*/
 }
 
-.aboutintrotext{
-  padding: 4% 1% 5% 1%;
-}
-
 .aboutcontent{
-  padding: 3% 0 3% 0;
+  margin: 0 5% 0 5%;
+  padding: 2%;
 }
 
 .aboutcontent h5{
@@ -237,33 +222,26 @@ i {
   /*text-align: see @media queries*/
 }
 
-.aboutcontent img, .aboutintro img {
-  /*width: see @media queries*/
-}
-
 .abouttext {
-  padding: 3% 1% 5% 1%;
+  margin-top: 3%;
 }
 
 /*--------------------------------------------------------PROJECTS PAGE-------------------------------------------------------------------*/
-.projectspage{
-  margin-top: 5%;
+.projectspage h1{
+  text-align: center;
+  /*margin: see @media queries*/
 }
 
 .projectspage img{
-  width: 100%;
-}
-
-.projectspage h1{
-    text-align: center;
+  /*width: see @media queries*/
 }
 
 .projectspage h3{
-    margin-bottom: 3%;
+  margin-bottom: 3%;
 }
 
 .projectscontent{
-  margin: 3% 5% 0 5%;
+  margin: 0 5% 0 5%;
   padding: 2%;
 }
 
@@ -277,18 +255,21 @@ i {
 
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
 /*------BLOGPOST INDEX---------*/
-.blogpostindexintro{
-  padding: 7% 0 3% 0;
-  margin-bottom: 2%;
-}
-.blogpostindexintro p{
-  margin-top: 3%;
-  font-size: 110%;
-}
+/*.blogpostindexintro{*/
+/*  padding: 7% 0 3% 0;*/
+/*  margin-bottom: 2%;*/
+/*}*/
 
 .blogpostindexintro h1{
+  text-align: left;
+  /*margin: see @media queries*/
+}
+
+.blogpostindexintro {
+  padding-bottom: 3%;
   margin-bottom: 2%;
 }
+
 
 /*-----SHOW BLOGPOST-----------*/
 .showblogpostpage{
@@ -385,9 +366,11 @@ i {
 
 .contactdownload{
   padding: 0 0 3% 25%;
-  color: #337AB7;
 }
 
+.contactdownload a{
+  color: #337AB7;
+}
 .contactdownload i{
   font-size: 550%;
 }
@@ -494,11 +477,26 @@ i {
   .splashheader h2 {
     font-size: 150%;
   }
-  .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
+  .aboutpage h1{
+    margin: 7% 0 4% 0;
+  }
+  .aboutcontent h5, .aboutcontent p, .aboutintro p{
     text-align: center;
   }
-  .aboutcontent img, .aboutintro img {
+  .aboutpage img{
     width: 70%;
+  }
+  .projectspage h1{
+    margin: 7% 0 4% 0;
+  }
+  .projectscontent h3, .projectscontent p{
+    text-align: center;
+  }
+  .projectspage img{
+    width: 70%;
+  }
+  .blogpostindexintro h1{
+    margin: 20% 0 4% 0;
   }
 }
 
@@ -519,11 +517,26 @@ i {
   .splashheader h2 {
     font-size: 150%;
   }
-  .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
+  .aboutpage h1{
+    margin: 7% 0 4% 0;
+  }
+  .aboutcontent h5, .aboutcontent p, .aboutintro p{
     text-align: center;
   }
-  .aboutcontent img, .aboutintro img {
+  .aboutpage img{
     width: 70%;
+  }
+  .projectspage h1{
+    margin: 7% 0 4% 0;
+  }
+  .projectscontent h3, .projectscontent p{
+    text-align: center;
+  }
+  .projectspage img{
+    width: 70%;
+  }
+  .blogpostindexintro h1{
+    margin: 20% 0 4% 0;
   }
 }
 
@@ -544,14 +557,26 @@ i {
   .splashheader h2 {
     font-size: 200%;
   }
-  .aboutcontent {
-    margin: 0 auto;
-  }
-  .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
+  .aboutcontent h5, .aboutcontent p, .aboutintro p{
     text-align: center;
   }
-  .aboutcontent img, .aboutintro img {
+  .aboutpage h1{
+    margin: 7% 0 4% 0;
+  }
+  .aboutpage img{
     width: 70%;
+  }
+  .projectspage h1{
+    margin: 7% 0 4% 0;
+  }
+  .projectscontent h3, .projectscontent p{
+    text-align: center;
+  }
+  .projectspage img{
+    width: 70%;
+  }
+  .blogpostindexintro h1{
+    margin: 15% 0 4% 0;
   }
 }
 
@@ -572,14 +597,26 @@ i {
   .splashheader h2 {
     font-size: 250%;
   }
-  .aboutintro p{
-    text-align: left;
+  .aboutpage h1{
+    margin: 7% 0 4% 0;
   }
-  .aboutcontent h5, .aboutcontent p, .aboutintro h1, .aboutintro p{
+  .aboutcontent h5, .aboutcontent p, .aboutintro p{
     text-align: center;
   }
-  .aboutcontent img, .aboutintro img {
+  .aboutpage img{
     width: 70%;
+  }
+  .projectspage h1{
+    margin: 7% 0 4% 0;
+  }
+  .projectscontent h3, .projectscontent p{
+    text-align: center;
+  }
+  .projectspage img{
+    width: 70%;
+  }
+  .blogpostindexintro h1{
+    margin: 10% 0 4% 0;
   }
 }
 
@@ -601,11 +638,26 @@ i {
   .splashheader h2 {
     font-size: 300%;
   }
-  .aboutcontent h5, .aboutcontent p, .aboutintro p{
-    text-align: left;
+  .aboutpage h1{
+    margin: 5% 0 2% 0;
   }
-  .aboutcontent img, .aboutintro img {
+  .aboutcontent h5, .aboutcontent p, .aboutintro p{
+    text-align: justify;
+  }
+  .aboutpage img{
     width: 100%;
+  }
+  .projectspage h1{
+    margin: 5% 0 2% 0;
+  }
+  .projectscontent h3, .projectscontent p{
+    text-align: justify;
+  }
+  .projectspage img{
+    width: 100%;
+  }
+  .blogpostindexintro h1{
+    margin: 10% 0 4% 0;
   }
 
 }

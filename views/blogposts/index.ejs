@@ -5,18 +5,18 @@
     <div class="blogpostindexintro greybackground">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <h1>Dylan's Blog.</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <p>Hi, im Dylan and in this blog i discuss a number of topics covering the latest in web development, cloud computing and technology.</p>
                     <p>Not only will i share with you my experiences and challenges i've faced during my own coding journey, but also share with you the knowledge i've gained along the way, covering the key concepts and technologies any starting out web devleoper must know!</p>                
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <% if(currentUser && currentUser.username == "admin"){ %>
                         <p><a class="btn btn-primary btn-lg" href="/blogposts/new">Add New Blog Post</a></p>
                     <% } %>
@@ -27,10 +27,10 @@
     <div class="container">
             <% blogposts.forEach(function(blogpost){ %>
                 <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                         <img class="img-fluid" src="<%= blogpost.image %>">
                     </div>
-                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
                         <h2><%=blogpost.name%></h2>
                         <p><em><span> <%= blogpost.created.toDateString() %> </span></p></em>
                         <p><%- blogpost.description.substring(0, 200) %>...</p>

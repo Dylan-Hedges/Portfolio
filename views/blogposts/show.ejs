@@ -5,22 +5,22 @@
 <section class=" showblogpostpage">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <img class="mx-auto d-block" src ="<%=blogpost.image%>">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <h4><a><%=blogpost.name%></a></h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <p><span>Posted: <%= blogpost.created.toDateString() %> </span></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <p><%= blogpost.description %></p>
                 <% if(currentUser && blogpost.author.id.equals(currentUser._id)){ %>
                     <a class="btn btn-xs btn-warning" href="/blogposts/<%= blogpost._id%>/edit">Edit</a>
@@ -31,14 +31,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <hr>
                 <a class = "btn btn-md btn-success" href="/blogposts/<%= blogpost._id %>/comments/new">Add Comment</a>
                 <a class="btn btn-md btn-primary" href="/blogposts">Back</a>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <% blogpost.comments.forEach(function(comment){ %>
                 <hr>
                     <p><%= comment.text %></p>
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 commentbuttons">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 commentbuttons">
                 <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
                     <a class="btn btn-xs btn-warning" href="/blogposts/<%= blogpost._id %>/comments/<%= comment._id %>/edit">Edit</a>
                     <form class="delete-form" action="/blogposts/<%= blogpost._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
