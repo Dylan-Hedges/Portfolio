@@ -26,6 +26,16 @@ button{
 .greybackground{
   background-color: #f4f4f4;
 }
+/*----Animations----*/
+.animate-wp-1, .animate-wp-2, .animate-wp-3, .animate-wp-4, .animate-wp-5.animated {
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+.animate-wp-1.animated, .animate-wp-2.animated, .animate-wp-3.animated, .animate-wp-4.animated, .animate-wp-5.animated   {
+    opacity: 1;
+}
+
 
 /*-----------------------NAV BAR-----------------------*/
 .navbar{
