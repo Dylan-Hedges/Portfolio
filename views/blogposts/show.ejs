@@ -6,17 +6,18 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                <img class="mx-auto d-block" src ="<%=blogpost.image%>">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                <h4><a><%=blogpost.name%></a></h4>
+                <h2><a><%=blogpost.name%></a></h2>
             </div>
         </div>
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <p><span>Posted: <%= blogpost.created.toDateString() %> </span></p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <img class="mx-auto d-block" src ="<%=blogpost.image%>">
             </div>
         </div>
         <div class="row">
