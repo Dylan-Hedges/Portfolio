@@ -39,7 +39,11 @@ button{
 
 /*-----------------------NAV BAR-----------------------*/
 .navbar{
-  padding: 1px 15px 4px 15px;
+  /*padding: see @media queries;*/
+}
+
+.navbar-toggler-icon{
+  /*padding: see @media queries;*/
 }
 
 .navbar-brand{
@@ -51,12 +55,12 @@ button{
 }
 
 i {
-    font-size: 120%;
-    padding: 0 5px 0 4px;
+  font-size: 120%;
+  padding: 0 5px 0 4px;
 }
 
 .fa-pied-piper{
-  font-size: 170%;
+  /*font-size: see @media queries;*/
   color: rgba(0,0,0,.5);
 }
 
@@ -472,6 +476,15 @@ i {
 /*------------------------------@Media Queries---------------------------------*/
 /*Extra small "col"*/
 @media only screen and (min-width: 0px) {
+  .navbar{
+    padding: 15px 15px 10px 15px;
+  }
+  .navbar-toggler-icon{
+    padding: 20px !important;
+  }
+  .fa-pied-piper{
+    font-size: 250%;
+  }
   .landingsplashpage{
       background-attachment: scroll;
   }
@@ -512,6 +525,15 @@ i {
 
 /*Small "col-sm"*/
 @media only screen and (min-width: 576px) {
+  .navbar{
+    padding: 15px 15px 10px 15px;
+  }
+  .navbar-toggler-icon{
+    padding: 20px !important;
+  }
+  .fa-pied-piper{
+    font-size: 250%;
+  }
   .landingsplashpage{
       background-attachment: scroll;
   }
@@ -552,6 +574,15 @@ i {
 
 /*Medium "col-md"*/
 @media only screen and (min-width: 768px) {
+  .navbar{
+    padding: 10px 15px 10px 15px;
+  }
+  .navbar-toggler-icon{
+    padding: 20px !important;
+  }
+  .fa-pied-piper{
+    font-size: 250%;
+  }
   .landingsplashpage{
       background-attachment: scroll;
   }
@@ -592,6 +623,12 @@ i {
 
 /*Large "col-lg"*/
 @media only screen and (min-width: 992px) {
+  .navbar{
+    padding: 1px 15px 4px 15px;
+  }
+  .fa-pied-piper{
+    font-size: 170%;
+  }
   .landingsplashpage{
       background-attachment: fixed;
   }
@@ -633,6 +670,12 @@ i {
 
 /*Extra large "col-xl*/
 @media only screen and (min-width: 1200px) {
+  .navbar{
+    padding: 1px 15px 4px 15px;
+  }
+  .fa-pied-piper{
+    font-size: 170%;
+  }
   .landingsplashpage{
       background-attachment: fixed;
   }
