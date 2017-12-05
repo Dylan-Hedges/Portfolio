@@ -1,3 +1,10 @@
+/*CSS Debug Ghost*/
+/** {*/
+/*  background: #000 !important;*/
+/*  color: #0f0 !important;*/
+/*  outline: solid #f00 1px !important;*/
+/*}*/
+
 html{
   /*Footer*/
   position: relative;
@@ -11,9 +18,6 @@ body{
   margin-bottom: 60px;
 }
 
-.container-fluid{
-  padding: 0;
-}
 
 p {
   text-align: justify;
@@ -216,17 +220,12 @@ i {
   /*width: see @media queries;*/
 }
 
-.aboutintro{
-  margin: 0 5% 0 5%;
-  padding: 2%;
-}
 
 .aboutintro p{
   /*text-align: see @media queries*/
 }
 
-.aboutcontent{
-  margin: 0 5% 0 5%;
+.aboutintro, .aboutcontent{
   padding: 2%;
 }
 
@@ -258,7 +257,6 @@ i {
 }
 
 .projectscontent{
-  margin: 0 5% 0 5%;
   padding: 2%;
 }
 
