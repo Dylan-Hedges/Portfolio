@@ -1,6 +1,6 @@
 <!--BLOGPOST INDEX-->
-
 <% include ../partials/header %>
+
 <section class="blogpostindexpage">
     <div class="blogpostindexintro greybackground">
         <div class="container">
@@ -17,7 +17,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <% if(currentUser && currentUser.username == "admin"){ %>
+                    <% if(currentUser && currentUser.username == admin){ %>
                         <p><a class="btn btn-primary btn-lg" href="/blogposts/new">Add New Blog Post</a></p>
                     <% } %>
                 </div>

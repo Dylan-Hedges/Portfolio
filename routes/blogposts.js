@@ -2,16 +2,17 @@ var express = require("express");
 var router = express.Router();
 var Blogpost = require("../models/blogpost");
 var middleware = require("../middleware");
+var config = require("../config.js");
 
 //--------------------ROUTES--------------------
-
 //INDEX ROUTE
 router.get("/blogposts", function(req, res){
+    var admin = config.admin;
     Blogpost.find({}, function(err, allBlogposts){
         if(err){
             console.log(err);
         }else{
-            res.render("blogposts/index",{blogposts:allBlogposts});
+            res.render("blogposts/index",{blogposts:allBlogposts, admin:admin});
         }
     });
 });
