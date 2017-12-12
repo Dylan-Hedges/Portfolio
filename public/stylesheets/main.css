@@ -63,12 +63,12 @@ i {
   padding: 0 5px 0 4px;
 }
 
-.fa-pied-piper{
+.fa-code{
   /*font-size: see @media queries;*/
   color: rgba(0,0,0,.5);
 }
 
-.fa-pied-piper:hover{
+.fa-code:hover{
   color: #337AB7;
 }
 
@@ -270,7 +270,9 @@ i {
 
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
 /*------BLOGPOST INDEX---------*/
-
+.blogpostindexpage{
+  margin-top: 5vh;
+}
 .blogpostindexintro h1{
   text-align: left;
   /*margin: see @media queries*/
@@ -284,7 +286,8 @@ i {
 
 /*-----SHOW BLOGPOST-----------*/
 .showblogpostpage{
-  margin-top: 5%;
+  /*margin-top: 5%;*/
+  margin-top: 10vh;
 }
 
 .showblogpostpage .container{
@@ -480,11 +483,11 @@ i {
   .navbar-toggler-icon{
     padding: 20px !important;
   }
-  .fa-pied-piper{
+  .fa-code{
     font-size: 250%;
   }
   .landingsplashpage{
-      background-attachment: scroll;
+    background-attachment: scroll;
   }
   .landingeducationtext p, .landingeducationtext h5{
     text-align: center;
@@ -499,7 +502,7 @@ i {
     font-size: 150%;
   }
   .aboutpage h1{
-    margin: 7% 0 4% 0;
+    margin: 20% 0 4% 0;
   }
   .aboutcontent h5, .aboutcontent p, .aboutintro p{
     text-align: center;
@@ -508,7 +511,7 @@ i {
     width: 70%;
   }
   .projectspage h1{
-    margin: 7% 0 4% 0;
+    margin: 20% 0 4% 0;
   }
   .projectscontent h3, .projectscontent p{
     text-align: center;
@@ -517,7 +520,7 @@ i {
     width: 70%;
   }
   .blogpostindexintro h1{
-    margin: 20% 0 4% 0;
+    margin: 25% 0 4% 0;
   }
 }
 
@@ -529,11 +532,11 @@ i {
   .navbar-toggler-icon{
     padding: 20px !important;
   }
-  .fa-pied-piper{
+  .fa-code{
     font-size: 250%;
   }
   .landingsplashpage{
-      background-attachment: scroll;
+    background-attachment: scroll;
   }
   .landingeducationtext p, .landingeducationtext h5{
     text-align: center;
@@ -548,7 +551,7 @@ i {
     font-size: 150%;
   }
   .aboutpage h1{
-    margin: 7% 0 4% 0;
+    margin: 20% 0 4% 0;
   }
   .aboutcontent h5, .aboutcontent p, .aboutintro p{
     text-align: center;
@@ -557,7 +560,7 @@ i {
     width: 70%;
   }
   .projectspage h1{
-    margin: 7% 0 4% 0;
+    margin: 20% 0 4% 0;
   }
   .projectscontent h3, .projectscontent p{
     text-align: center;
@@ -566,7 +569,7 @@ i {
     width: 70%;
   }
   .blogpostindexintro h1{
-    margin: 20% 0 4% 0;
+    margin: 25% 0 4% 0;
   }
 }
 
@@ -578,11 +581,11 @@ i {
   .navbar-toggler-icon{
     padding: 20px !important;
   }
-  .fa-pied-piper{
+  .fa-code{
     font-size: 250%;
   }
   .landingsplashpage{
-      background-attachment: scroll;
+    background-attachment: scroll;
   }
   .landingeducationtext p, .landingeducationtext h5{
     text-align: center;
@@ -600,13 +603,13 @@ i {
     text-align: center;
   }
   .aboutpage h1{
-    margin: 7% 0 4% 0;
+    margin: 10% 0 4% 0;
   }
   .aboutpage img{
     width: 70%;
   }
   .projectspage h1{
-    margin: 7% 0 4% 0;
+    margin: 10% 0 4% 0;
   }
   .projectscontent h3, .projectscontent p{
     text-align: center;
@@ -624,11 +627,11 @@ i {
   .navbar{
     padding: 1px 15px 4px 15px;
   }
-  .fa-pied-piper{
+  .fa-code{
     font-size: 170%;
   }
   .landingsplashpage{
-      background-attachment: fixed;
+    background-attachment: fixed;
   }
   .landingeducationtext p, .landingeducationtext h5{
     text-align: left;
@@ -671,11 +674,11 @@ i {
   .navbar{
     padding: 1px 15px 4px 15px;
   }
-  .fa-pied-piper{
+  .fa-code{
     font-size: 170%;
   }
   .landingsplashpage{
-      background-attachment: fixed;
+    background-attachment: fixed;
   }
   .landingeducationtext p, .landingeducationtext h5{
     text-align: left;
@@ -708,7 +711,7 @@ i {
     width: 100%;
   }
   .blogpostindexintro h1{
-    margin: 10% 0 4% 0;
+    margin: 5% 0 4% 0;
   }
 
 }
