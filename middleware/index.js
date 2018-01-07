@@ -1,12 +1,12 @@
 //---------MIDDLEWARE----------
 var Blogpost = require ("../models/blogpost");
 var Comment = require ("../models/comment");
-
+var config = require("../config.js");
 var middlewareObj ={};
 
 //BLOGPOST OWNERSHIP
 middlewareObj.checkBlogpostOwnership = function(req, res, next){
-    if(req.isAuthenticated() && req.user.username == "admin"){
+    if(req.isAuthenticated() && req.user.username == config.admin){
         Blogpost.findById(req.params.id, function(err, foundBlogpost){
            if(err || !foundBlogpost){
                req.flash("error", "Blogpost not found.");
