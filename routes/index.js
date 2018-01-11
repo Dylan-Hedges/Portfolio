@@ -4,15 +4,8 @@ var passport = require("passport");
 var User = require("../models/user");
 //Contact form
 var nodemailer = require("nodemailer");
-
 //API key storage
 var config = require("../config.js");
-var clientID = config.clientID;
-var clientSecret = config.clientID;
-var user = config.user;
-var refreshToken = config.refreshToken;
-var accessToken = config.accessToken;
-
 
 //".router" is used isntead of "app." as our routes are now in a seperate file that links back to the "app.js" file
 
@@ -30,7 +23,6 @@ router.get("/about", function(req, res){
 router.get("/projects", function(req, res){
    res.render("projects"); 
 });
-
 
 
 //--------------------REGISTER----------------------------------------
@@ -107,12 +99,8 @@ router.post("/send", function(req, res){
         port: 465,
         secure: true,
         auth: {
-            type: "OAuth2",
-            user: user,
-            clientID: clientID,
-            clientSecret: clientSecret,
-            refreshToken: refreshToken,
-            accessToken: accessToken
+            user: config.user,
+            pass: config.password
         }
     });
     
@@ -126,17 +114,13 @@ router.post("/send", function(req, res){
     
     //Sending information
     let mailOptions = {
-        from: `${contactname} <${user}>`, // sender address
-        to: user, // list of receivers
+        from: `${contactname} <${config.user}>`, // sender address
+        to: config.recipient, // list of receivers
         subject: `Nodemailer: ${title}`, // Subject line
         text: 'No message entered.', // text if nothing is filled out
         html: output // html body
-        // auth: {
-        //     user: user,
-        //     refreshToken: refreshToken,
-        //     accessToken: accessToken
-        // }
     };
+    
     //Send mail
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
