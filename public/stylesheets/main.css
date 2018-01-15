@@ -273,14 +273,19 @@ i {
 .blogpostindexpage{
   margin-top: 5vh;
 }
+
+.blogpostindexintro {
+  padding-bottom: 3%;
+  margin-bottom: 2%;
+}
+
 .blogpostindexintro h1{
   text-align: left;
   /*margin: see @media queries*/
 }
 
-.blogpostindexintro {
-  padding-bottom: 3%;
-  margin-bottom: 2%;
+.blogpostintrotext{
+  font-size: 120%;
 }
 
 
