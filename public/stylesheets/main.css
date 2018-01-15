@@ -96,7 +96,7 @@ i {
 }
 
 .flashmessagestyle{
-  margin-top: 3%;
+  /*see @media queries*/
 }
 /*---------------------------------------------LANDING PAGE (SPLASH)--------------------------------------------------------*/
 .landingsplashpage{
@@ -480,6 +480,9 @@ i {
   .navbar{
     padding: 15px 15px 10px 15px;
   }
+  .flashmessagestyle{
+    margin-top: 20%;
+  }
   .navbar-toggler-icon{
     padding: 20px !important;
   }
@@ -528,6 +531,9 @@ i {
 @media only screen and (min-width: 576px) {
   .navbar{
     padding: 15px 15px 10px 15px;
+  }
+  .flashmessagestyle{
+    margin-top: 15%;
   }
   .navbar-toggler-icon{
     padding: 20px !important;
@@ -578,6 +584,9 @@ i {
   .navbar{
     padding: 10px 15px 10px 15px;
   }
+  .flashmessagestyle{
+    margin-top: 12%;
+  }
   .navbar-toggler-icon{
     padding: 20px !important;
   }
@@ -627,6 +636,9 @@ i {
   .navbar{
     padding: 1px 15px 4px 15px;
   }
+  .flashmessagestyle{
+    margin-top: 7%;
+  }
   .fa-code{
     font-size: 170%;
   }
@@ -673,6 +685,9 @@ i {
 @media only screen and (min-width: 1200px) {
   .navbar{
     padding: 1px 15px 4px 15px;
+  }
+  .flashmessagestyle{
+    margin-top: 4%;
   }
   .fa-code{
     font-size: 170%;
