@@ -99,8 +99,13 @@ router.post("/send", function(req, res){
         port: 465,
         secure: true,
         auth: {
+            type: 'OAuth2',
             user: config.user,
-            pass: config.password
+            clientId: config.clientID,
+            clientSecret: config.clientSecret,
+            refreshToken: config.refreshToken,
+            accessToken: config.accessToken,
+            expires: 1484314697598
         }
     });
     

@@ -2,7 +2,6 @@ var config = {
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
   user: process.env.USER,
-  password: process.env.PASSWORD,
   recipient: process.env.RECIPIENT,
   refreshToken: process.env.REFRESHTOKEN,
   accessToken: process.env.ACCESSTOKEN,
