@@ -22,11 +22,11 @@ var commentRoutes       = require("./routes/comments"),
 
 //----------------DATABASE CONNECTION--------------------
 //Local DB
-// mongoose.connect("mongodb://localhost/portfolio", {useMongoClient: true});
+mongoose.connect("mongodb://localhost/portfolio", {useMongoClient: true});
 
 //Production DB (mlab)
 var mlabconnection = config.mlabconnection;
-mongoose.connect(mlabconnection, {useMongoClient: true});
+// mongoose.connect(mlabconnection, {useMongoClient: true});
 
 mongoose.Promise = global.Promise;
 

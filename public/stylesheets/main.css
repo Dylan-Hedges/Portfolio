@@ -31,12 +31,12 @@ button{
   background-color: #f4f4f4;
 }
 /*----Animations----*/
-.animate-wp-1, .animate-wp-2, .animate-wp-3, .animate-wp-4, .animate-wp-5.animated {
+.animate-wp-1, .animate-wp-2, .animate-wp-3, .animate-wp-4, .animate-wp-5, .animate-wp-6, .animate-wp-7{
     opacity: 0;
     animation-duration: 4s;
 }
 
-.animate-wp-1.animated, .animate-wp-2.animated, .animate-wp-3.animated, .animate-wp-4.animated, .animate-wp-5.animated   {
+.animate-wp-1.animated, .animate-wp-2.animated, .animate-wp-3.animated, .animate-wp-4.animated, .animate-wp-5.animated, .animate-wp-6.animated, .animate-wp-7.animated {
     opacity: 1;
 }
 
