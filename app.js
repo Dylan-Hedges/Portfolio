@@ -21,12 +21,11 @@ var commentRoutes       = require("./routes/comments"),
     indexRoutes         = require("./routes/index")
 
 //----------------DATABASE CONNECTION--------------------
-
 if (process.env.NODE_ENV === 'production') {
     //Production DB (mlab)
     var mlabconnection = config.mlabconnection;
     mongoose.connect(mlabconnection, {useMongoClient: true});
-}else{
+} else {
     //Local DB
     mongoose.connect("mongodb://localhost/portfolio", {useMongoClient: true});
 }

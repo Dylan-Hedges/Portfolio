@@ -41,6 +41,12 @@ button{
 }
 
 
+.no-padding {
+    padding-right:0;
+    padding-left:0;
+}
+
+
 /*-----------------------NAV BAR-----------------------*/
 .navbar{
   /*padding: see @media queries;*/
@@ -249,24 +255,38 @@ i {
 }
 
 .projectspage img{
-  /*width: see @media queries*/
+  width: 100%;
 }
 
 .projectspage h3{
   margin-bottom: 3%;
+
 }
 
 .projectscontent{
-  padding: 2%;
+  margin-top: 2%;
+  
 }
+.projectscontent h3 {
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+
+.projectscontent ul {
+  padding: 0 0 2% 0;
+}
+
+.projectscontent li{
+  list-style: none;
+  text-align: center;
+  margin: 10px 0;
+}
+
 
 .projectstext {
   margin-top: 4%;
 }
 
-#portfolioimage{
-  margin-top: 7%;
-}
 
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
 /*------BLOGPOST INDEX---------*/
@@ -521,12 +541,6 @@ i {
   .projectspage h1{
     margin: 20% 0 4% 0;
   }
-  .projectscontent h3, .projectscontent p{
-    text-align: center;
-  }
-  .projectspage img{
-    width: 70%;
-  }
   .blogpostindexintro h1{
     margin: 25% 0 4% 0;
   }
@@ -572,12 +586,6 @@ i {
   }
   .projectspage h1{
     margin: 20% 0 4% 0;
-  }
-  .projectscontent h3, .projectscontent p{
-    text-align: center;
-  }
-  .projectspage img{
-    width: 70%;
   }
   .blogpostindexintro h1{
     margin: 25% 0 4% 0;
@@ -625,12 +633,6 @@ i {
   .projectspage h1{
     margin: 10% 0 4% 0;
   }
-  .projectscontent h3, .projectscontent p{
-    text-align: center;
-  }
-  .projectspage img{
-    width: 70%;
-  }
   .blogpostindexintro h1{
     margin: 15% 0 4% 0;
   }
@@ -673,12 +675,6 @@ i {
   }
   .projectspage h1{
     margin: 7% 0 4% 0;
-  }
-  .projectscontent h3, .projectscontent p{
-    text-align: center;
-  }
-  .projectspage img{
-    width: 70%;
   }
   .blogpostindexintro h1{
     margin: 10% 0 4% 0;
@@ -723,12 +719,6 @@ i {
   }
   .projectspage h1{
     margin: 5% 0 2% 0;
-  }
-  .projectscontent h3, .projectscontent p{
-    text-align: justify;
-  }
-  .projectspage img{
-    width: 100%;
   }
   .blogpostindexintro h1{
     margin: 5% 0 4% 0;
