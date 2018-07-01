@@ -31,7 +31,6 @@
                     </div>
                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
                         <h2><%=blogpost.name%></h2>
-                        <p><em><span> <%= blogpost.created.toDateString() %> </span></p></em>
                         <p><%- blogpost.description.substring(0, 200) %>...</p>
                         <a class="btn btn-outline-primary" href="/blogposts/<%=blogpost._id %>" >Read More</a>
                     </div>
