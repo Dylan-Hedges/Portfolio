@@ -41,9 +41,16 @@ button{
 }
 
 
-.no-padding {
-    padding-right:0;
-    padding-left:0;
+.projectsimagestyle {
+    /*padding-right:0;*/
+    /*padding-left:0;*/
+    padding: 10px;
+    transition: transform .2s;
+}
+.projectsimagestyle:hover {
+    transform: scale(1.02); 
+    z-index: 1;
+    opacity: 0.9;
 }
 
 
