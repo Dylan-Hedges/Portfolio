@@ -10,14 +10,14 @@ $(document).ready(function () {
         offset: '85%'
     });
     $('.animate-wp-3').waypoint(function(direction) {
-        $('.animate-wp-3').addClass('animated bounceInLeft');
+        $('.animate-wp-3').addClass('animated fadeInDown');
     }, {
         offset: '80%'
     });
     $('.animate-wp-4').waypoint(function(direction) {
         $('.animate-wp-4').addClass('animated fadeInDown');
     }, {
-        offset: '80%'
+        offset: '77%'
     });
     $('.animate-wp-5').waypoint(function(direction) {
         $('.animate-wp-5').addClass('animated bounce');

@@ -25,6 +25,9 @@ p {
   text-align: justify;
 }
 
+.navbarmargin{
+  margin-left: auto;
+}
 .headerstyle{
     display: block;
     height: 2px;
@@ -190,8 +193,8 @@ i {
 
 /*----------LANDING EDUCATION------------*/
 .landingeducationpage {
-  padding: 2% 0 2% 0 ;
-
+  /*padding: 2% 0 2% 0 ;*/
+  margin: 2% 0 5% 0 ;
   /*color: white;*/
 }
 
@@ -227,9 +230,9 @@ i {
 }
 
 .landingtoolspage i{
-  font-size: 650%;
+  font-size: 500%;
   color: #337AB7;
-  padding: 3% 0 2% 0;
+  /*padding: 3% 0 2% 0;*/
 }
 
 .landingtoolspage h1{
@@ -672,7 +675,7 @@ i {
     background-attachment: fixed;
   }
   .landingeducationtext p, .landingeducationtext h5{
-    text-align: left;
+    text-align: center;
   }
   .landingpageicons h5{
     padding: 20% 0 20% 0;
@@ -710,7 +713,7 @@ i {
     background-attachment: fixed;
   }
   .landingeducationtext p, .landingeducationtext h5{
-    text-align: left;
+    text-align: center;
   }
   .landingpageicons h5{
     padding: 20% 0 20% 0;
