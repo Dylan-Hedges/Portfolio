@@ -96,11 +96,16 @@ i {
 
 .logostyle{
   /*font-size: see @media queries;*/
-  color: rgba(0,0,0,.5);
+  /*color: rgba(0,0,0,.5);*/
+  color: white;
 }
 
 .logostyle:hover{
   color: #337AB7;
+}
+
+.navbarcolored{
+  background-color: #202020;
 }
 
 .navbar li a {
@@ -108,12 +113,15 @@ i {
   font-weight: 500;
   border-bottom: 2px solid transparent;
   letter-spacing: 2px;
-  color: rgba(0,0,0,.5);
+  /*color: rgba(0,0,0,.5);*/
+  color: white;
 }
 
 .navbar li a:hover, .navbar li a:active  {
-  border-color: #337AB7;
-  color: #337AB7;
+  /*border-color: #337AB7;*/
+  /*color: #337AB7;*/
+  border-color: white;
+  color: white;
   font-weight: 600;
 }
 
@@ -134,9 +142,9 @@ i {
 }
 /*---------------------------------------------LANDING PAGE (SPLASH)--------------------------------------------------------*/
 .landingsplashpage{
-  padding-bottom: 35vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(2.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(2.jpg);
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(backgroundlanding_resized3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(backgroundlanding_resized3.jpg);
   background-size: cover;
   background-attachment: fixed;
 
@@ -150,7 +158,7 @@ i {
   /*text-align: center; - centers objects horizontally*/
   text-align: center;
   /*padding-top: 40vh; - centers objects vertically*/
-  padding-top: 30vh;
+  padding-top: 23vh;
 }
 
 .splashheader h1 {
@@ -497,7 +505,8 @@ i {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #337AB7;
+  /*background-color: #337AB7;*/
+  background-color: #4c4c4c;
   height: 60px; /* Set the fixed height of the footer here */
 }
 /*--Footer Text--*/
@@ -510,11 +519,14 @@ i {
 
 .footerleft a{
   padding-right: 12px;
-  color: #add8e6;
+  text-decoration: none;
+  /*color: #add8e6;*/
+  color: #fff;
 }
 
 .footerleft a:hover{
   color: #fff;
+  font-weight: 600;
 }
 /*--Footer Icons--*/
 .footerright {
@@ -526,7 +538,8 @@ i {
 }
 
 .footerright a{
-  color: #add8e6;
+  /*color: #add8e6;*/
+  color: #fff;
   padding-right: 10px;
 }
 
@@ -536,6 +549,7 @@ i {
 
 .footerright a i:hover{
   color: #fff;
+  font-size: 250%;
 }
 
 
