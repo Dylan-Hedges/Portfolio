@@ -23,6 +23,38 @@ $(document).ready(function () {
     }, {
         offset: '80%'
     });
+    //Titles
+    $('.animate-wp-18').waypoint(function(direction) {
+        $('.animate-wp-18').addClass('animated fadeInDown');
+    }, {
+        offset: '90%'
+    });
+    $('.animate-wp-19').waypoint(function(direction) {
+        $('.animate-wp-19').addClass('animated fadeInDown');
+    }, {
+        offset: '90%'
+    });
+    $('.animate-wp-20').waypoint(function(direction) {
+        $('.animate-wp-20').addClass('animated fadeInDown');
+    }, {
+        offset: '90%'
+    });
+    //Titles-Underline
+    $('.animate-wp-21').waypoint(function(direction) {
+        $('.animate-wp-21').addClass('animated zoomIn');
+    }, {
+        offset: '95%'
+    });
+    $('.animate-wp-22').waypoint(function(direction) {
+        $('.animate-wp-22').addClass('animated zoomIn');
+    }, {
+        offset: '95%'
+    });
+    $('.animate-wp-23').waypoint(function(direction) {
+        $('.animate-wp-23').addClass('animated zoomIn');
+    }, {
+        offset: '95%'
+    });
     //--------Contact Page-----
     $('.animate-wp-5').waypoint(function(direction) {
         $('.animate-wp-5').addClass('animated bounce');
@@ -95,7 +127,54 @@ $(document).ready(function () {
         offset: '65%'
     });
     
+    //------Projects Page------
+    $('.animate-wp-24').waypoint(function(direction) {
+        $('.animate-wp-24').addClass('animated fadeInUp');
+    }, {
+        offset: '100%'
+    });
+      $('.animate-wp-25').waypoint(function(direction) {
+        $('.animate-wp-25').addClass('animated fadeInUp');
+    }, {
+        offset: '100%'
+    });
+    $('.animate-wp-26').waypoint(function(direction) {
+        $('.animate-wp-26').addClass('animated fadeInUp');
+    }, {
+        offset: '100%'
+    });
+    $('.animate-wp-27').waypoint(function(direction) {
+        $('.animate-wp-27').addClass('animated fadeInUp');
+    }, {
+        offset: '55%'
+    });
+      $('.animate-wp-28').waypoint(function(direction) {
+        $('.animate-wp-28').addClass('animated fadeInUp');
+    }, {
+        offset: '55%'
+    });
+    $('.animate-wp-29').waypoint(function(direction) {
+        $('.animate-wp-29').addClass('animated fadeInUp');
+    }, {
+        offset: '55%'
+    });
+    $('.animate-wp-30').waypoint(function(direction) {
+        $('.animate-wp-30').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    });
+      $('.animate-wp-31').waypoint(function(direction) {
+        $('.animate-wp-31').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    });
+    $('.animate-wp-32').waypoint(function(direction) {
+        $('.animate-wp-32').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    });
     
+    //------All Page Titles-----
     $('.animate-wp-16').waypoint(function(direction) {
         $('.animate-wp-16').addClass('animated zoomIn');
     }, {
@@ -106,4 +185,5 @@ $(document).ready(function () {
     }, {
         offset: '100%'
     });
+
 });
