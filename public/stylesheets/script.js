@@ -79,7 +79,7 @@ $(document).ready(function () {
     $('.animate-wp-8').waypoint(function(direction) {
         $('.animate-wp-8').addClass('animated fadeInLeft');
     }, {
-       offset: '50%'
+       offset: '55%'
     });
     //Image
     $('.animate-wp-9').waypoint(function(direction) {
@@ -92,7 +92,7 @@ $(document).ready(function () {
     $('.animate-wp-10').waypoint(function(direction) {
         $('.animate-wp-10').addClass('animated fadeInLeft');
     }, {
-      offset: '65%'
+      offset: '60%'
     });
     //Text
     $('.animate-wp-11').waypoint(function(direction) {
@@ -111,14 +111,14 @@ $(document).ready(function () {
     $('.animate-wp-13').waypoint(function(direction) {
         $('.animate-wp-13').addClass('animated fadeInRight');
     }, {
-        offset: '65%'
+        offset: '60%'
     });
     //---Intel---
     //Image
     $('.animate-wp-14').waypoint(function(direction) {
         $('.animate-wp-14').addClass('animated fadeInLeft');
     }, {
-        offset: '65%'
+        offset: '60%'
     });
     //Text
     $('.animate-wp-15').waypoint(function(direction) {
