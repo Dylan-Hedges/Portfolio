@@ -105,10 +105,6 @@ button{
   /*padding: see @media queries;*/
 }
 
-.navbar-toggler-icon{
-  /*padding: see @media queries;*/
-}
-
 .navbar-brand{
   margin-right: 5px;
 }
@@ -155,6 +151,12 @@ i {
 
 .navbar .navbariconstyle li a:hover, .navbar .navbariconstyle li a:active  {
   border-color: transparent;
+}
+.fas.fa-bars {
+  color:white;
+}
+.fas.fa-bars:hover {
+  color: #337AB7;
 }
 
 #welcomemessage:hover{
@@ -560,11 +562,8 @@ i {
   .flashmessagestyle{
     margin-top: 20%;
   }
-  .navbar-toggler-icon{
-    padding: 20px !important;
-  }
-  .logostyle{
-    font-size: 250%;
+  .logostyle, .fas.fa-bars{
+    font-size: 230%;
   }
   .landingsplashpage{
     background-attachment: scroll;
@@ -600,11 +599,8 @@ i {
   .flashmessagestyle{
     margin-top: 15%;
   }
-  .navbar-toggler-icon{
-    padding: 20px !important;
-  }
-  .logostyle{
-    font-size: 250%;
+  .logostyle, .fas.fa-bars{
+    font-size: 230%;
   }
   .landingsplashpage{
     background-attachment: scroll;
@@ -640,11 +636,8 @@ i {
   .flashmessagestyle{
     margin-top: 12%;
   }
-  .navbar-toggler-icon{
-    padding: 20px !important;
-  }
-  .logostyle{
-    font-size: 250%;
+  .logostyle, .fas.fa-bars{
+    font-size: 230%;
   }
   .landingsplashpage{
     background-attachment: scroll;
@@ -680,7 +673,7 @@ i {
   .flashmessagestyle{
     margin-top: 7%;
   }
-  .logostyle{
+  .logostyle, .fas.fa-bars{
     font-size: 170%;
   }
   .landingsplashpage{
@@ -718,7 +711,7 @@ i {
   .flashmessagestyle{
     margin-top: 4%;
   }
-  .logostyle{
+  .logostyle, .fas.fa-bars{
     font-size: 170%;
   }
   .landingsplashpage{
