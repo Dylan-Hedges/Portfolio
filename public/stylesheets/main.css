@@ -25,6 +25,14 @@ p {
   text-align: justify;
 }
 
+.headerunderline{
+  background: #555;
+  width: 70px;
+  height: 4px;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
 .navbarmargin{
   margin-left: auto;
 }
@@ -45,13 +53,19 @@ button{
 .greybackground{
   background-color: #f4f4f4;
 }
+
+
+
 /*----Animations----*/
 .animate-wp-1, .animate-wp-2, .animate-wp-3, .animate-wp-4, .animate-wp-5, .animate-wp-6, .animate-wp-7{
     opacity: 0;
     animation-duration: 4s;
 }
-
-.animate-wp-1.animated, .animate-wp-2.animated, .animate-wp-3.animated, .animate-wp-4.animated, .animate-wp-5.animated, .animate-wp-6.animated, .animate-wp-7.animated {
+.animate-wp-6, .animate-wp-7, .animate-wp-8, .animate-wp-9, .animate-wp-10, .animate-wp-11, .animate-wp-12, .animate-wp-13, .animate-wp-14, .animate-wp-15, .animate-wp-16, .animate-wp-17{
+    opacity: 0;
+    animation-duration: 1s;
+}
+.animate-wp-1.animated, .animate-wp-2.animated, .animate-wp-3.animated, .animate-wp-4.animated, .animate-wp-5.animated, .animate-wp-6.animated, .animate-wp-7.animated, .animate-wp-8.animated, .animate-wp-9.animated, .animate-wp-10.animated, .animate-wp-11.animated, .animate-wp-12.animated, .animate-wp-13.animated, .animate-wp-14.animated, .animate-wp-15.animated, .animate-wp-16.animated, .animate-wp-17.animated  {
     opacity: 1;
 }
 
@@ -584,7 +598,7 @@ i {
     font-size: 150%;
   }
   .aboutpage h1{
-    margin: 20% 0 4% 0;
+    margin: 21% 0 4% 0;
   }
   .projectspage h1{
     margin: 20% 0 4% 0;
@@ -624,7 +638,7 @@ i {
     font-size: 150%;
   }
   .aboutpage h1{
-    margin: 20% 0 4% 0;
+    margin: 21% 0 4% 0;
   }
   .projectspage h1{
     margin: 20% 0 4% 0;
@@ -664,7 +678,7 @@ i {
     font-size: 200%;
   }
   .aboutpage h1{
-    margin: 10% 0 4% 0;
+    margin: 11% 0 4% 0;
   }
   .projectspage h1{
     margin: 10% 0 4% 0;
@@ -701,7 +715,7 @@ i {
     font-size: 250%;
   }
   .aboutpage h1{
-    margin: 7% 0 4% 0;
+    margin: 8% 0 4% 0;
   }
   .projectspage h1{
     margin: 7% 0 4% 0;
@@ -739,7 +753,7 @@ i {
     font-size: 300%;
   }
   .aboutpage h1{
-    margin: 5% 0 2% 0;
+    margin: 6% 0 2% 0;
   }
   .projectspage h1{
     margin: 5% 0 2% 0;
