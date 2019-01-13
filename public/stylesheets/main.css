@@ -219,6 +219,12 @@ i {
   margin: 3% 0 3% 0;
 }
 
+.landingpageabouttext{
+  letter-spacing: 1px;
+  font-size: 17px;
+  line-height: 200%;
+}
+
 .landingeducationtext{
   padding-top: 2%;
 }
@@ -264,7 +270,7 @@ i {
 }
 
 .aboutpage img {
-  /*border-radius: 50%;*/
+  border-radius: 5%;
 }
 
 .aboutintro{
@@ -272,7 +278,8 @@ i {
 }
 
 .aboutintrotext{
-  margin-top: 1%;
+  letter-spacing: 1.4px;
+  line-height: 140%;
 }
 
 .aboutcontent{
