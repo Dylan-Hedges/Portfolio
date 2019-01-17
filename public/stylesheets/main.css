@@ -55,6 +55,13 @@ button{
   background-color: #f4f4f4;
 }
 
+.z-index:hover{
+  z-index: 1;
+}
+
+.nopadding{
+  padding: 0;
+}
 
 
 /*----Animations----*/
@@ -84,21 +91,6 @@ button{
 }
 
 
-.projectsimagestyle {
-    /*padding-right:0;*/
-    /*padding-left:0;*/
-    /*padding: 3px;*/
-    transition: transform .2s;
-}
-.projectsimagestyle:hover {
-    transform: scale(1.02); 
-    z-index: 1;
-    opacity: 0.9;
-}
-
-.projectstextstyle:hover{
-  background-color: #f4f4f4;
-}
 
 /*-----------------------NAV BAR-----------------------*/
 .navbar{
@@ -304,6 +296,25 @@ i {
 }
 
 /*--------------------------------------------------------PROJECTS PAGE-------------------------------------------------------------------*/
+
+.projectsimagestyle {
+    /*padding-right:0;*/
+    /*padding-left:0;*/
+    /*padding: 3px;*/
+    transition: transform .2s;
+      position: relative;
+    z-index: 0;
+}
+.projectsimagestyle:hover {
+    transform: scale(1.02); 
+    z-index: 9999;
+    /*opacity: 0.9;*/
+}
+
+.projectstextstyle:hover{
+  background-color: #f4f4f4;
+}
+
 .projectspage h1{
   text-align: center;
   /*margin: see @media queries*/
