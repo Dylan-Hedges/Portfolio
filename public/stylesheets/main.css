@@ -379,8 +379,8 @@ i {
   margin-top: 5vh;
 }
 
-.blogpostdescription{
-  font-size: 0.8rem;
+.blogpostindexpage P{
+  font-size: 0.8rem !important;
 }
 
 .blogpostindexintro {
@@ -402,6 +402,10 @@ i {
 .showblogpostpage{
   /*margin-top: 5%;*/
   margin-top: 10vh;
+}
+
+.showblogpostpage p{
+  font-size: 0.8rem !important;
 }
 
 .showblogpostpage .container{
