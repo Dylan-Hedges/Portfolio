@@ -17,7 +17,7 @@
         </div>
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                <p><%- blogpost.description %></p>
+                <p class="blogpostdescription"><%- blogpost.description %></p>
                 <% if(currentUser && blogpost.author.id.equals(currentUser._id)){ %>
                     <a class="btn btn-xs btn-warning" href="/blogposts/<%= blogpost._id%>/edit">Edit</a>
                     <form class="delete-form" action ="/blogposts/<%= blogpost._id %>?_method=DELETE" method="POST">
