@@ -73,15 +73,19 @@ button{
     opacity: 0;
     animation-duration: 1s;
 }
-.animate-wp-24, .animate-wp-27, .animate-wp-30 {
+.animate-wp-row1p1, .animate-wp-row2p1 {
     opacity: 0;
     animation-duration: 600ms;
 }
-.animate-wp-25, .animate-wp-28, .animate-wp-31 {
+.animate-wp-row1p2, .animate-wp-row2p2 {
     opacity: 0;
     animation-duration: 700ms;
 }
-.animate-wp-26, .animate-wp-29, .animate-wp-32 {
+.animate-wp-row1p3, .animate-wp-row2p3 {
+    opacity: 0;
+    animation-duration: 800ms;
+}
+.animate-wp-row1p4, .animate-wp-row2p4 {
     opacity: 0;
     animation-duration: 800ms;
 }
@@ -372,6 +376,9 @@ i {
   margin-top: 4%;
 }
 
+.projectsgithubicon{
+  font-size: 1.6rem;
+}
 
 /*--------------------------------------------------------BLOG PAGE--------------------------------------------------------*/
 /*------BLOGPOST INDEX---------*/

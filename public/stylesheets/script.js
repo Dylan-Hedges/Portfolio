@@ -128,51 +128,47 @@ $(document).ready(function () {
     });
     
     //------Projects Page------
-    $('.animate-wp-24').waypoint(function(direction) {
-        $('.animate-wp-24').addClass('animated fadeInUp');
+    $('.animate-wp-row1p1').waypoint(function(direction) {
+        $('.animate-wp-row1p1').addClass('animated fadeInUp');
     }, {
         offset: '100%'
     });
-      $('.animate-wp-25').waypoint(function(direction) {
-        $('.animate-wp-25').addClass('animated fadeInUp');
+    $('.animate-wp-row1p2').waypoint(function(direction) {
+        $('.animate-wp-row1p2').addClass('animated fadeInUp');
     }, {
         offset: '100%'
     });
-    $('.animate-wp-26').waypoint(function(direction) {
-        $('.animate-wp-26').addClass('animated fadeInUp');
+    $('.animate-wp-row1p3').waypoint(function(direction) {
+        $('.animate-wp-row1p3').addClass('animated fadeInUp');
     }, {
         offset: '100%'
     });
-    $('.animate-wp-27').waypoint(function(direction) {
-        $('.animate-wp-27').addClass('animated fadeInUp');
+    $('.animate-wp-row1p4').waypoint(function(direction) {
+        $('.animate-wp-row1p4').addClass('animated fadeInUp');
+    }, {
+        offset: '100%'
+    });
+    $('.animate-wp-row2p1').waypoint(function(direction) {
+        $('.animate-wp-row2p1').addClass('animated fadeInUp');
+    }, {
+        offset: '55%'
+    });    
+    $('.animate-wp-row2p2').waypoint(function(direction) {
+        $('.animate-wp-row2p2').addClass('animated fadeInUp');
+    }, {
+        offset: '55%'
+    });    
+    $('.animate-wp-row2p3').waypoint(function(direction) {
+        $('.animate-wp-row2p3').addClass('animated fadeInUp');
+    }, {
+        offset: '55%'
+    });    
+    $('.animate-wp-row2p4').waypoint(function(direction) {
+        $('.animate-wp-row2p4').addClass('animated fadeInUp');
     }, {
         offset: '55%'
     });
-      $('.animate-wp-28').waypoint(function(direction) {
-        $('.animate-wp-28').addClass('animated fadeInUp');
-    }, {
-        offset: '55%'
-    });
-    $('.animate-wp-29').waypoint(function(direction) {
-        $('.animate-wp-29').addClass('animated fadeInUp');
-    }, {
-        offset: '55%'
-    });
-    $('.animate-wp-30').waypoint(function(direction) {
-        $('.animate-wp-30').addClass('animated fadeInUp');
-    }, {
-        offset: '50%'
-    });
-      $('.animate-wp-31').waypoint(function(direction) {
-        $('.animate-wp-31').addClass('animated fadeInUp');
-    }, {
-        offset: '50%'
-    });
-    $('.animate-wp-32').waypoint(function(direction) {
-        $('.animate-wp-32').addClass('animated fadeInUp');
-    }, {
-        offset: '50%'
-    });
+   
     
     //------All Page Titles-----
     $('.animate-wp-16').waypoint(function(direction) {
