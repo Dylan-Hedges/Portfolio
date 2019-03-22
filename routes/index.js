@@ -78,68 +78,70 @@ router.get("/contact", function(req, res){
 
 //CONTACT FORM
 router.post("/send", function(req, res){
-    var contactname = req.body.contactname,
-        email = req.body.email,
-        company = req.body.company,
-        title = req.body.title,
-        message = req.body.message;
-    //Content that is delivered to my email
-    var output = `    
-        <p>${message}</p>
-        <h4><u>Contact Details</u></h4>
-        <p><b>Name:</b> ${contactname}<br>
-        <b>Company:</b> ${company}<br>
-        <b>Email:</b> ${email}
-        </p>
-    `;
+    req.flash("error", "Service temporarily disabled, please contact me via email.");
+    res.redirect("contact");  
+//     var contactname = req.body.contactname,
+//         email = req.body.email,
+//         company = req.body.company,
+//         title = req.body.title,
+//         message = req.body.message;
+//     //Content that is delivered to my email
+//     var output = `    
+//         <p>${message}</p>
+//         <h4><u>Contact Details</u></h4>
+//         <p><b>Name:</b> ${contactname}<br>
+//         <b>Company:</b> ${company}<br>
+//         <b>Email:</b> ${email}
+//         </p>
+//     `;
 
-    //Account connection and authorization
-    let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
-        auth: {
-            type: 'OAuth2',
-            user: config.user,
-            clientId: config.clientID,
-            clientSecret: config.clientSecret,
-            refreshToken: config.refreshToken,
-            accessToken: config.accessToken,
-            expires: 1484314697598
-        }
-    });
+//     //Account connection and authorization
+//     let transporter = nodemailer.createTransport({
+//         host: 'smtp.gmail.com',
+//         port: 465,
+//         secure: true,
+//         auth: {
+//             type: 'OAuth2',
+//             user: config.user,
+//             clientId: config.clientID,
+//             clientSecret: config.clientSecret,
+//             refreshToken: config.refreshToken,
+//             accessToken: config.accessToken,
+//             expires: 1484314697598
+//         }
+//     });
     
-    //Listens for new access tokens, if an access token expires it uses refreshToken to generate a new access token
-   transporter.on('token', token => {
-        console.log('A new access token was generated');
-        console.log('User: %s', token.user);
-        console.log('Access Token: %s', token.accessToken);
-        console.log('Expires: %s', new Date(token.expires));
-    });
+//     //Listens for new access tokens, if an access token expires it uses refreshToken to generate a new access token
+//   transporter.on('token', token => {
+//         console.log('A new access token was generated');
+//         console.log('User: %s', token.user);
+//         console.log('Access Token: %s', token.accessToken);
+//         console.log('Expires: %s', new Date(token.expires));
+//     });
     
-    //Sending information
-    let mailOptions = {
-        from: `${contactname} <${config.user}>`, // sender address
-        to: config.recipient, // list of receivers
-        subject: `Nodemailer: ${title}`, // Subject line
-        text: 'No message entered.', // text if nothing is filled out
-        html: output // html body
-    };
+//     //Sending information
+//     let mailOptions = {
+//         from: `${contactname} <${config.user}>`, // sender address
+//         to: config.recipient, // list of receivers
+//         subject: `Nodemailer: ${title}`, // Subject line
+//         text: 'No message entered.', // text if nothing is filled out
+//         html: output // html body
+//     };
     
-    //Send mail
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.log(error);
-            req.flash("error", "Message failed to send.");
-            res.redirect("contact");    
-        }else{
-            // console.log('Message sent: %s', info.messageId);
-            // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+//     //Send mail
+//     transporter.sendMail(mailOptions, (error, info) => {
+//         if (error) {
+//             console.log(error);
+//             req.flash("error", "Message failed to send.");
+//             res.redirect("contact");    
+//         }else{
+//             // console.log('Message sent: %s', info.messageId);
+//             // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
             
-            req.flash("success", "Message successfully sent, i will be in touch soon!");
-            res.redirect("contact");            
-        }
-    });
+//             req.flash("success", "Message successfully sent, i will be in touch soon!");
+//             res.redirect("contact");            
+//         }
+//     });
     
 });
 
